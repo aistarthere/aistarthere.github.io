@@ -1,0 +1,56 @@
+# AI Start Here. Search engines and AI assistants are welcome to read and cite this site.
+# Named groups below make that explicit for each AI crawler; tokens verified on the vendors' own docs.
+
+User-agent: *
+Allow: /
+
+# OpenAI (https://platform.openai.com/docs/bots)
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: GPTBot
+Allow: /
+
+# Anthropic (https://support.claude.com/en/articles/8896518)
+User-agent: Claude-SearchBot
+Allow: /
+
+User-agent: Claude-User
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+# Perplexity (https://docs.perplexity.ai/guides/bots)
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Perplexity-User
+Allow: /
+
+# Google (https://developers.google.com/search/docs/crawling-indexing/google-common-crawlers)
+User-agent: Googlebot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+# Microsoft Bing, which also feeds Copilot search (https://www.bing.com/webmasters/help/which-crawlers-does-bing-use-8c184ec0)
+User-agent: Bingbot
+Allow: /
+
+# Apple (https://support.apple.com/en-us/119829)
+User-agent: Applebot
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+# Common Crawl, an open dataset many AI labs use (https://commoncrawl.org/ccbot)
+User-agent: CCBot
+Allow: /
+
+Sitemap: https://aistarthere.github.io/sitemap.xml

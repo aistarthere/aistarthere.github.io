@@ -1,0 +1,133 @@
+{
+  "updated": "2026-10-26",
+  "howToUpdate": "Add a row when a lab publishes a release post. Only use the lab's own page as the source. If a field is not on that page, write TODO.",
+  "models": [
+    {
+      "company": "OpenAI",
+      "model": "GPT-6.1 Sol",
+      "released": "2026-09-29",
+      "goodFor": "Coding, PDFs/documents and multi-step business tasks; OpenAI says near GPT-6 Astra quality at a fifth of Astra's price",
+      "free": "No (Plus and above in ChatGPT; API is paid)",
+      "source": "https://openai.com/index/introducing-gpt-6-1-sol/",
+      "source2": "https://chatgpt.com/pricing"
+    },
+    {
+      "company": "OpenAI",
+      "model": "GPT-6 Luna",
+      "released": "2026-09-22",
+      "goodFor": "Fast, low-cost everyday work",
+      "free": "Yes, in the ChatGPT desktop app for Free and Go users (per launch post)",
+      "source": "https://openai.com/index/introducing-gpt-6-sol-and-luna/"
+    },
+    {
+      "company": "OpenAI",
+      "model": "GPT-6 Astra",
+      "released": "TODO (Sept 2026, exact day not on the page opened)",
+      "goodFor": "OpenAI's top model for the hardest work",
+      "free": "No (ChatGPT Plus and above)",
+      "source": "https://openai.com/index/introducing-gpt-6-sol-and-luna/",
+      "source2": "https://chatgpt.com/pricing"
+    },
+    {
+      "company": "Anthropic",
+      "model": "Claude Opus 5.5",
+      "released": "2026-09-22",
+      "goodFor": "Long, complex coding and knowledge work",
+      "free": "No (Opus is not on the Free plan)",
+      "source": "https://www.anthropic.com/claude-opus-5-5",
+      "source2": "https://claude.com/pricing"
+    },
+    {
+      "company": "Anthropic",
+      "model": "Claude Sonnet 5.5",
+      "released": "2026-09-28",
+      "goodFor": "Everyday tasks, fixing bugs, polished documents, slides and spreadsheets",
+      "free": "Sonnet is on Claude's Free plan, with limits (pricing page does not name the version)",
+      "source": "https://www.anthropic.com/claude-sonnet-5-5",
+      "source2": "https://claude.com/pricing"
+    },
+    {
+      "company": "Anthropic",
+      "model": "Claude Haiku 5.5",
+      "released": "2026-10-07",
+      "goodFor": "Fast, cheap summaries, sorting and high-volume tasks",
+      "free": "Haiku is on Claude's Free plan, with limits (version not named)",
+      "source": "https://www.anthropic.com/claude-haiku-5-5",
+      "source2": "https://claude.com/pricing"
+    },
+    {
+      "company": "Google",
+      "model": "Gemini 4 Argon",
+      "released": "2026-09-30",
+      "goodFor": "Complex software engineering, legal/finance work, cyber defence",
+      "free": "No. Currently trusted testers only; paid API and Google AI Ultra first",
+      "source": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-argon/"
+    },
+    {
+      "company": "Google",
+      "model": "Gemini 3.8 Flash",
+      "released": "2026-09-02",
+      "goodFor": "Low-cost reasoning and coding 'workhorse'",
+      "free": "In the Gemini app it is listed for AI Pro/Ultra subscribers. Free tier for developers: TODO",
+      "source": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/3-8-flash-and-3-8-flash-cyber/"
+    },
+    {
+      "company": "Meta",
+      "model": "Muse Wonder",
+      "released": "2026-10-12",
+      "goodFor": "Agent-style tasks, e.g. insurance claims, leases, building an app",
+      "free": "TODO (developer API and Muse Code now; consumer rollout to subscribers first)",
+      "source": "https://about.fb.com/news/2026/10/introducing-muse-wonder-models/"
+    },
+    {
+      "company": "Meta",
+      "model": "Muse Spark Open",
+      "released": "2026-10-15",
+      "goodFor": "Open-weight model for coding and agents you can run yourself (needs very powerful hardware)",
+      "free": "Weights downloadable; Meta says the licence lets many developers use it free",
+      "source": "https://research.meta.ai/blog/muse-spark-open"
+    },
+    {
+      "company": "xAI",
+      "model": "Grok 4.7",
+      "released": "TODO (date not shown on the page opened)",
+      "goodFor": "Coding and knowledge work",
+      "free": "TODO (listed in Cursor, Grok Build and the paid API)",
+      "source": "https://x.ai/news/grok-4-7"
+    },
+    {
+      "company": "Mistral AI (France)",
+      "model": "Mistral Large 4 (preview)",
+      "released": "2026-10-06",
+      "goodFor": "European-built open-weight multimodal model; coding, agents, documents",
+      "free": "TODO (preview API on Mistral Studio; weights promised by end of October)",
+      "source": "https://mistral.ai/news/mistral-large-4/"
+    },
+    {
+      "company": "DeepSeek",
+      "model": "DeepSeek-V4.1-Flash-1017",
+      "released": "TODO (page undated; release ID suggests 17 Oct 2026)",
+      "goodFor": "Building whole projects with code; cheaper, shorter answers than the previous version",
+      "free": "Open weights on Hugging Face; live on DeepSeek website and app (price not stated)",
+      "source": "https://api-docs.deepseek.com/news/news261017/"
+    },
+    {
+      "company": "Moonshot AI",
+      "model": "Kimi K3.1 Pro",
+      "released": "TODO (date not shown on the page opened)",
+      "goodFor": "Coding, 3D creation, financial research",
+      "free": "TODO (on Kimi.ai and apps; weights promised by 4 Nov 2026)",
+      "source": "https://www.kimi.ai/blog/kimi-k3-1-pro"
+    },
+    {
+      "company": "Anthropic",
+      "model": "Claude Fable 5.1",
+      "released": "2026-09-15",
+      "goodFor": "Anthropic's top generally available model for long-running coding, knowledge work and research",
+      "free": "No (not on Claude's Free plan; Pro via usage credits)",
+      "source": "https://www.anthropic.com/claude-fable-and-mythos-5-1",
+      "source2": "https://claude.com/pricing",
+      "releasedSource": "https://www.anthropic.com/news"
+    }
+  ]
+}

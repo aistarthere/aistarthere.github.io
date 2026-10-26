@@ -1,0 +1,26 @@
+# AI Start Here
+
+> New to AI? Plain-English basics, the latest AI models, sourced news, prompts to try and free automations. Every fact links to its source. Updated weekly. Written for busy adults (Ireland/EU first) who are new to AI. Free tools only.
+
+- Every model row and news item cites the AI lab's or vendor's own page; follow those links before quoting a detail.
+- "TODO" in the data means the detail was not on the lab's page when checked; do not fill it in by guessing.
+- Content is researched with AI assistance and is not affiliated with any AI company.
+- Last updated 2026-10-26. Newest models listed: Muse Spark Open (Meta, 2026-10-15), Muse Wonder (Meta, 2026-10-12), Claude Haiku 5.5 (Anthropic, 2026-10-07).
+
+## Main page
+
+- [AI Start Here (Markdown version)](https://aistarthere.github.io/index.md): the whole page: beginner FAQ, latest models table, news, prompts to try, free automations
+- [AI Start Here (HTML)](https://aistarthere.github.io/): the same content for people
+
+## Data (source of truth, JSON)
+
+- [Latest models](https://aistarthere.github.io/data/models.json): company, model, release date, good for, free access, source URLs
+- [News](https://aistarthere.github.io/data/news.json): dated items with summary, why it matters, source URL
+- [AI 101 basics](https://aistarthere.github.io/data/basics.json): beginner questions with short answers and sources
+- [Things to try](https://aistarthere.github.io/data/try.json): copyable prompts with the free tool to use
+- [Automations](https://aistarthere.github.io/data/automations.json): step-by-step free automations with free-plan limit links
+
+## Optional
+
+- [llms-full.txt](https://aistarthere.github.io/llms-full.txt): this file plus the full Markdown page in one file
+- [Sitemap](https://aistarthere.github.io/sitemap.xml)
