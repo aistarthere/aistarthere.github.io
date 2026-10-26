@@ -1,0 +1,102 @@
+{
+  "updated": "2026-10-26",
+  "intro": "No jargon, no hype. Ten minutes here and you will know enough to start. Each answer starts with the short version.",
+  "cards": [
+    {
+      "id": "what-is-ai",
+      "title": "What is AI, really?",
+      "answer": "Today's AI tools are software trained on huge numbers of examples (text, images, audio) that produce new text, images or answers from the patterns they learned.",
+      "body": "They do not 'know' things the way a person does; they are very good at producing likely, useful-looking output. The free Elements of AI course points out that AI means different things to different people, so it helps to be specific: most people today mean chatbots like ChatGPT or Claude.",
+      "sources": [
+        {
+          "label": "Elements of AI, chapter 1",
+          "url": "https://course.elementsofai.com/1/1"
+        }
+      ]
+    },
+    {
+      "id": "what-is-a-chatbot",
+      "title": "What is a chatbot like ChatGPT, Claude or Gemini?",
+      "answer": "A chat app that sits on top of a 'model', the trained AI that actually writes the replies.",
+      "body": "You type or speak; the model answers. Companies release new models every few weeks, which is why the Latest models table below exists.",
+      "sources": [
+        {
+          "label": "Latest models table (lab sources)",
+          "url": "#models"
+        }
+      ]
+    },
+    {
+      "id": "can-ai-be-wrong",
+      "title": "Can AI be wrong?",
+      "answer": "Yes. AI can confidently invent facts, links or numbers that sound right.",
+      "body": "Treat it like a fast, clever intern: great for drafts and ideas, but check anything important yourself, especially health, money and legal questions. Ask it for links and open them.",
+      "sources": []
+    },
+    {
+      "id": "how-to-prompt",
+      "title": "How do I write a good prompt?",
+      "answer": "Say who it should act as, what you want, who it is for and what format you need.",
+      "body": "Example: 'Act as a friendly tutor. Explain inflation to a 14-year-old in 5 bullet points.' Then reply with 'shorter', 'more examples' or 'now as a table'.",
+      "sources": []
+    },
+    {
+      "id": "privacy",
+      "title": "Is it safe to paste personal information into a chatbot?",
+      "answer": "Don't paste passwords, bank details, medical records or other people's private information.",
+      "body": "Check each app's settings for whether your chats are used for training. Claude's pricing page, for example, lists model training as opt-out on its consumer plans.",
+      "sources": [
+        {
+          "label": "Claude plans",
+          "url": "https://claude.com/pricing"
+        }
+      ]
+    },
+    {
+      "id": "do-i-need-to-pay",
+      "title": "Do I need to pay to use AI?",
+      "answer": "No. ChatGPT and Claude both have free plans, with usage limits.",
+      "body": "ChatGPT's pricing page says the free version is available to everyone; Claude's Free plan is $0. Upgrade only when you keep hitting a limit doing something genuinely useful.",
+      "sources": [
+        {
+          "label": "ChatGPT plans",
+          "url": "https://chatgpt.com/pricing"
+        },
+        {
+          "label": "Claude plans",
+          "url": "https://claude.com/pricing"
+        }
+      ]
+    },
+    {
+      "id": "where-to-start",
+      "title": "Which AI chatbot should a beginner start with?",
+      "answer": "Start with the free plan of ChatGPT or Claude; both work on web and mobile.",
+      "body": "Both pricing pages list free chat on the web and phone apps, plus voice. Pick one, use it for a week on real tasks (an email, a plan, a summary), then try the other on the same task and compare.",
+      "sources": [
+        {
+          "label": "ChatGPT plans",
+          "url": "https://chatgpt.com/pricing"
+        },
+        {
+          "label": "Claude plans",
+          "url": "https://claude.com/pricing"
+        }
+      ]
+    }
+  ],
+  "learnMore": [
+    {
+      "label": "Elements of AI: free online course for non-experts (University of Helsinki & MinnaLearn)",
+      "url": "https://www.elementsofai.com/"
+    },
+    {
+      "label": "ChatGPT plans (what is free)",
+      "url": "https://chatgpt.com/pricing"
+    },
+    {
+      "label": "Claude plans (what is free)",
+      "url": "https://claude.com/pricing"
+    }
+  ]
+}

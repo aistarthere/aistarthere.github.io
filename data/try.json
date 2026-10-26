@@ -1,0 +1,54 @@
+{
+  "updated": "2026-10-26",
+  "items": [
+    {
+      "title": "Ask it to teach you something",
+      "tool": "ChatGPT (Free) - Study mode",
+      "prompt": "I want to understand how mortgages work in Ireland. Teach me step by step, ask me one question at a time, and check I understood before moving on.",
+      "tip": "ChatGPT's pricing page lists Study mode on the Free plan. Check anything Ireland-specific with an official source.",
+      "source": "https://chatgpt.com/pricing"
+    },
+    {
+      "title": "Fix an email you're dreading",
+      "tool": "Any free chatbot",
+      "prompt": "Rewrite this email so it is polite but firm, under 120 words, and ends with one clear next step: [paste email]",
+      "tip": "Ask for 3 versions, then say which one you like and why.",
+      "source": ""
+    },
+    {
+      "title": "Plan a week of dinners on a budget",
+      "tool": "Any free chatbot",
+      "prompt": "Plan 5 weeknight dinners for 2 adults, under 30 minutes each, using ingredients from an Irish supermarket. Give me one combined shopping list grouped by aisle.",
+      "tip": "Do not trust its prices. Use it for the plan and the list only.",
+      "source": ""
+    },
+    {
+      "title": "Have a spoken conversation",
+      "tool": "ChatGPT or Claude voice mode (Free, limited)",
+      "prompt": "Let's practise a job interview for a [role]. Ask me one question at a time and give me feedback after each answer.",
+      "tip": "Both pricing pages list voice on their free plans (ChatGPT says 'limited').",
+      "source": "https://claude.com/pricing"
+    },
+    {
+      "title": "Build a tiny app without coding",
+      "tool": "Claude (Free) - Artifacts",
+      "prompt": "Make me a simple interactive tip calculator in euro that splits a bill between friends.",
+      "tip": "Claude's Free plan lists 'Create Artifacts'. Then try: 'add a dark mode'.",
+      "source": "https://claude.com/pricing"
+    },
+    {
+      "title": "Make it show its sources",
+      "tool": "Claude (Free) - web search",
+      "prompt": "What changed in the latest AI model releases this month? Give me links to the official announcements for every claim.",
+      "tip": "Click the links. If one doesn't support the claim, don't use the claim.",
+      "source": "https://claude.com/pricing"
+    },
+    {
+      "title": "Turn a photo into notes",
+      "tool": "ChatGPT (Free) - vision (limited)",
+      "prompt": "Here's a photo of my whiteboard. Turn it into tidy meeting notes with action items and owners.",
+      "tip": "Never upload photos of IDs, bank cards or other people's private info.",
+      "source": "https://chatgpt.com/pricing"
+    }
+  ]
+}

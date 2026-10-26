@@ -1,0 +1,110 @@
+{
+  "updated": "2026-10-26",
+  "note": "Every idea uses free tiers only. Free-plan limits are linked so you can check them before you build.",
+  "items": [
+    {
+      "id": "inbox-to-sheet",
+      "title": "Log important emails to a spreadsheet automatically",
+      "level": "Beginner",
+      "time": "20 min",
+      "tools": [
+        "Zapier (Free)",
+        "Gmail",
+        "Google Sheets"
+      ],
+      "steps": [
+        "Make a Google Sheet with columns: Date, From, Subject.",
+        "In Zapier, create a Zap. Trigger: Gmail 'New email matching search' (e.g. from:bank OR subject:invoice).",
+        "Action: Google Sheets 'Create spreadsheet row' and map Date, From and Subject.",
+        "Test it, then turn it on. Zapier's free plan allows two-step Zaps, 100 tasks a month and checks every 15 minutes.",
+        "If a step says 'Premium', it isn't on the free plan. Pick a different app."
+      ],
+      "freeLimitsSource": "https://zapier.com/pricing"
+    },
+    {
+      "id": "form-to-sheet-summary",
+      "title": "Collect feedback with a form and get a weekly AI summary",
+      "level": "Beginner",
+      "time": "25 min",
+      "tools": [
+        "Tally (Free)",
+        "Google Sheets",
+        "ChatGPT or Claude (Free)"
+      ],
+      "steps": [
+        "Build a short feedback form in Tally (3 to 5 questions).",
+        "In the form's Integrations tab, connect Google Sheets. Every response becomes a new row (free on all Tally plans).",
+        "Once a week, copy the new rows and paste them into a chatbot with: 'Summarise the top 3 themes, the most common complaint, and one quick fix.'",
+        "Add the summary to a 'Weekly notes' tab so you can see trends."
+      ],
+      "freeLimitsSource": "https://tally.so/help/google-sheets-integration"
+    },
+    {
+      "id": "meeting-notes-project",
+      "title": "A reusable 'meeting notes to action items' assistant",
+      "level": "Beginner",
+      "time": "15 min",
+      "tools": [
+        "Claude (Free) - Projects"
+      ],
+      "steps": [
+        "In Claude, create a Project called 'Meeting notes'. The Free plan allows up to 5 Projects.",
+        "Add these instructions: 'When I paste notes or a transcript, return: 1) 3-line summary, 2) decisions, 3) action items as a table (owner, task, due date), 4) open questions.'",
+        "After each meeting, paste your rough notes into a new chat inside the Project.",
+        "Copy the action-item table into your to-do app or email."
+      ],
+      "freeLimitsSource": "https://claude.com/pricing"
+    },
+    {
+      "id": "rss-digest",
+      "title": "Build your own weekly news digest",
+      "level": "Intermediate",
+      "time": "40 min",
+      "tools": [
+        "Make (Free)",
+        "Google Sheets",
+        "Any free chatbot"
+      ],
+      "steps": [
+        "Pick 3 to 5 sites you trust that have an RSS feed.",
+        "In Make, create a scenario: an RSS 'watch feed items' module, then Google Sheets 'Add a row' (title, link, date). TODO: confirm the module names in Make's editor.",
+        "Schedule it to run once a day. Make's free plan gives 1,000 credits a month, and most actions use 1 credit.",
+        "On Fridays, paste the week's rows into a chatbot: 'Group these into themes and write a 5-bullet digest with the links.'"
+      ],
+      "freeLimitsSource": "https://www.make.com/en/pricing"
+    },
+    {
+      "id": "faq-helper",
+      "title": "A personal FAQ helper for your small business or club",
+      "level": "Beginner",
+      "time": "30 min",
+      "tools": [
+        "ChatGPT (Free) - Projects"
+      ],
+      "steps": [
+        "Write your opening hours, prices, policies and common answers into one document.",
+        "In ChatGPT, create a Project (listed on the Free plan) and add the document.",
+        "Instruction: 'Answer customer questions using only this document. If the answer isn't there, say so and suggest they contact us.'",
+        "Paste a customer's question in, review the draft, then send it yourself. Don't let it reply unsupervised."
+      ],
+      "freeLimitsSource": "https://chatgpt.com/pricing"
+    },
+    {
+      "id": "receipt-tracker",
+      "title": "Snap receipts into a simple expenses sheet",
+      "level": "Beginner",
+      "time": "15 min",
+      "tools": [
+        "ChatGPT (Free, limited uploads)",
+        "Google Sheets"
+      ],
+      "steps": [
+        "Create a Google Sheet with columns: Date, Shop, Total (EUR), Category.",
+        "Take photos of a few receipts and upload them to ChatGPT with: 'Extract date, shop, total in euro and a category for each. Output CSV with headers Date,Shop,Total,Category.'",
+        "Check every number against the receipt. AI misreads photos.",
+        "Paste the CSV into the sheet (Data > Split text to columns if needed) and add a SUM at the bottom."
+      ],
+      "freeLimitsSource": "https://chatgpt.com/pricing"
+    }
+  ]
+}

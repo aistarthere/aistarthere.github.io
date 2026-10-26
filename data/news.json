@@ -1,0 +1,40 @@
+{
+  "updated": "2026-10-26",
+  "items": [
+    {
+      "date": "2026-10-22",
+      "title": "Anthropic hands its 'Agent Skills' standard to the Agentic AI Foundation",
+      "summary": "Anthropic is donating Agent Skills, an open standard for teaching AI agents specific tasks, to the Agentic AI Foundation under the Linux Foundation. It says more than 70 agent platforms, including ChatGPT, Cursor, GitHub Copilot and VS Code, have adopted it since December 2025.",
+      "whyItMatters": "Skills you set up in one AI tool are more likely to work in others.",
+      "source": "https://www.anthropic.com/news/donating-agent-skills-to-the-agentic-ai-foundation"
+    },
+    {
+      "date": "2026-10-21",
+      "title": "OpenAI models are coming to Google Cloud",
+      "summary": "OpenAI says its frontier models and Codex are coming to Google Cloud's Model Garden, bought through Google Cloud Marketplace. General availability is planned 'in the coming weeks'; Microsoft remains OpenAI's primary cloud partner.",
+      "whyItMatters": "Rival clouds are carrying each other's models, so businesses get more choice.",
+      "source": "https://openai.com/index/openai-models-google-cloud"
+    },
+    {
+      "date": "2026-10-15",
+      "title": "Meta releases the weights of Muse Spark Open",
+      "summary": "Meta calls it the most capable US open-weight model to date: 816B parameters (42B active), with a 1M-token context window.",
+      "whyItMatters": "Anyone with the hardware can download and run it, rather than renting it through an app.",
+      "source": "https://research.meta.ai/blog/muse-spark-open"
+    },
+    {
+      "date": "2026-10-07",
+      "title": "Anthropic launches Claude Haiku 5.5 and cuts a Sonnet price",
+      "summary": "Anthropic says Haiku 5.5 costs around 75% less to run than Haiku 4.5. Sonnet 5.5 cache reads were also halved.",
+      "whyItMatters": "Small, cheap models keep getting better, so AI features get cheaper to build.",
+      "source": "https://www.anthropic.com/claude-haiku-5-5"
+    },
+    {
+      "date": "2026-10-06",
+      "title": "Mistral previews Mistral Large 4, trained in Europe",
+      "summary": "A 1-trillion-parameter multimodal model, trained in Mistral's own European datacenters. Weights are promised by the end of October.",
+      "whyItMatters": "A strong European option for people and businesses who care where their AI runs.",
+      "source": "https://mistral.ai/news/mistral-large-4/"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "_readme": "Site-wide settings used by build.py. baseUrl is the live GitHub Pages user site (org 'aistarthere', repo 'aistarthere.github.io', main branch, root). After editing, run: python3 build.py --assets",
+  "baseUrl": "https://aistarthere.github.io/",
+  "siteName": "AI Start Here",
+  "title": "AI Start Here | A free beginner's guide to using AI",
+  "description": "New to AI? Plain-English basics, the latest AI models, sourced news, prompts to try and free automations. Every fact links to its source. Updated weekly.",
+  "ogImageAlt": "AI Start Here. Get useful with AI this week, for free. Every fact links to its source.",
+  "locale": "en_IE",
+  "lang": "en-IE",
+  "organizationName": "AI Start Here",
+  "themeColor": "#4f46e5",
+  "_xHandle_readme": "Planned X handle @aistarthere is NOT created yet. Leave xHandle empty until the account exists; build.py then adds twitter:site and sameAs.",
+  "xHandle": ""
+}
