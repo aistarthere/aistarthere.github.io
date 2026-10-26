@@ -4,9 +4,9 @@
 */
 window.SITE_CONFIG = {
   // Tally form for idea suggestions (public form link, e.g. "https://tally.so/r/XXXXXX")
-  tallySuggestFormUrl: "",
+  tallySuggestFormUrl: "https://tally.so/r/1WWdDl",
   // Tally form for upvotes. Needs a hidden field named "idea". The site appends ?idea=<id>
-  tallyVoteFormUrl: "",
+  tallyVoteFormUrl: "https://tally.so/r/2jjaDj",
   // Google Sheet "counts" tab published to the web as CSV (File > Share > Publish to web > CSV).
   // Expected columns: idea,votes
   votesCsvUrl: "",
