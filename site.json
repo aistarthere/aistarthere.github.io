@@ -9,6 +9,5 @@
   "lang": "en-IE",
   "organizationName": "AI Start Here",
   "themeColor": "#4f46e5",
-  "_xHandle_readme": "Planned X handle @aistarthere is NOT created yet. Leave xHandle empty until the account exists; build.py then adds twitter:site and sameAs.",
-  "xHandle": ""
+  "xHandle": "@aistarthere"
 }
