@@ -11,7 +11,9 @@ window.SITE_CONFIG = {
   // Expected columns: idea,votes
   votesCsvUrl: "",
   // beehiiv embedded subscribe form: paste ONLY the src URL of the <script> beehiiv gives you
-  beehiivEmbedScriptSrc: "",
+  beehiivEmbedScriptSrc: "https://subscribe-forms.beehiiv.com/v3/loader.js",
+  // beehiiv form id (data-beehiiv-form attribute)
+  beehiivFormId: "ab6909b5-473b-47b6-99c9-984f8ce6caa7",
   // Public link to the beehiiv publication (newsletter archive)
   beehiivPublicationUrl: "",
   // GoatCounter site code, e.g. "ai101hub" -> https://ai101hub.goatcounter.com
