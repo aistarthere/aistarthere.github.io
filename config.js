@@ -17,7 +17,7 @@ window.SITE_CONFIG = {
   // Public link to the beehiiv publication (newsletter archive)
   beehiivPublicationUrl: "",
   // GoatCounter site code, e.g. "ai101hub" -> https://ai101hub.goatcounter.com
-  goatcounterCode: "",
+  goatcounterCode: "aistarthere",
   // X (Twitter) handle for the hub (account created 2026-10-26).
   xHandle: "@aistarthere"
 };
