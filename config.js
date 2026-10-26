@@ -9,7 +9,7 @@ window.SITE_CONFIG = {
   tallyVoteFormUrl: "https://tally.so/r/2jjaDj",
   // Google Sheet "counts" tab published to the web as CSV (File > Share > Publish to web > CSV).
   // Expected columns: idea,votes
-  votesCsvUrl: "",
+  votesCsvUrl: "https://docs.google.com/spreadsheets/d/e/2PACX-1vQhx61MVMCMlyl8iYxXrA7ZCgoosizFFZ7N5lZ9juBxX9OEt1-mZr1-3wAiPQYQn91q3rlGt8joqbn0/pub?gid=817858061&single=true&output=csv",
   // beehiiv embedded subscribe form: paste ONLY the src URL of the <script> beehiiv gives you
   beehiivEmbedScriptSrc: "https://subscribe-forms.beehiiv.com/v3/loader.js",
   // beehiiv form id (data-beehiiv-form attribute)
