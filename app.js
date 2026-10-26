@@ -56,7 +56,7 @@
   // 6. Newsletter embed
   const nl = $("#newsletter-embed");
   if (nl && CFG.beehiivEmbedScriptSrc) {
-    nl.innerHTML = ""; const s = document.createElement("script"); s.src = CFG.beehiivEmbedScriptSrc; s.async = true; nl.appendChild(s);
+    nl.innerHTML = ""; const s = document.createElement("script"); s.src = CFG.beehiivEmbedScriptSrc; s.async = true; if (CFG.beehiivFormId) s.setAttribute("data-beehiiv-form", CFG.beehiivFormId); nl.appendChild(s);
   }
   if (CFG.beehiivPublicationUrl) {
     const a = document.createElement("a"); a.href = CFG.beehiivPublicationUrl; a.target = "_blank"; a.rel = "noopener"; a.textContent = "newsletter archive";
