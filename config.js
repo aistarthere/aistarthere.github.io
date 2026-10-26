@@ -15,7 +15,7 @@ window.SITE_CONFIG = {
   // beehiiv form id (data-beehiiv-form attribute)
   beehiivFormId: "ab6909b5-473b-47b6-99c9-984f8ce6caa7",
   // Public link to the beehiiv publication (newsletter archive)
-  beehiivPublicationUrl: "",
+  beehiivPublicationUrl: "https://aistarthere-newsletter.beehiiv.com/",
   // GoatCounter site code, e.g. "ai101hub" -> https://ai101hub.goatcounter.com
   goatcounterCode: "aistarthere",
   // X (Twitter) handle for the hub (account created 2026-10-26).
