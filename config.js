@@ -18,6 +18,6 @@ window.SITE_CONFIG = {
   beehiivPublicationUrl: "",
   // GoatCounter site code, e.g. "ai101hub" -> https://ai101hub.goatcounter.com
   goatcounterCode: "",
-  // X (Twitter) handle for the hub. Planned: "@aistarthere" (account NOT created yet). Also set xHandle in site.json and rebuild.
-  xHandle: ""
+  // X (Twitter) handle for the hub (account created 2026-10-26).
+  xHandle: "@aistarthere"
 };
