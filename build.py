@@ -138,6 +138,7 @@ def r_head():
 <meta name="description" content="{e(d)}">
 <meta name="robots" content="index, follow, max-image-preview:large">
 <meta name="google-site-verification" content="b8aQowdIF8Ybq-6g_K273DIwLxjHl_nhiGMAdsaDWd8">
+<meta name="msvalidate.01" content="47F4F1AF24924904A878287F633732C9">
 <link rel="canonical" href="{e(BASE)}">
 <link rel="alternate" type="text/markdown" href="index.md" title="This page as Markdown">
 <link rel="describedby" type="text/markdown" href="llms.txt" title="llms.txt">
