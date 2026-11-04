@@ -54,10 +54,12 @@
   }
 
   // 6. Newsletter embed
-  const nl = $("#newsletter-embed");
-  if (nl && CFG.beehiivEmbedScriptSrc) {
-    nl.innerHTML = ""; const s = document.createElement("script"); s.src = CFG.beehiivEmbedScriptSrc; s.async = true; if (CFG.beehiivFormId) s.setAttribute("data-beehiiv-form", CFG.beehiivFormId); nl.appendChild(s);
-  }
+  if (CFG.beehiivEmbedScriptSrc) document.querySelectorAll("#newsletter-embed, .nl-embed").forEach((nl) => {
+    const load = () => { nl.innerHTML = ""; const s = document.createElement("script"); s.src = CFG.beehiivEmbedScriptSrc; s.async = true; if (CFG.beehiivFormId) s.setAttribute("data-beehiiv-form", CFG.beehiivFormId); nl.appendChild(s);
+      new MutationObserver(() => nl.querySelectorAll("iframe:not([title])").forEach((f) => f.title = "Newsletter signup form")).observe(nl, { childList: true, subtree: true }); };
+    if (!("IntersectionObserver" in window)) return load();
+    const io = new IntersectionObserver((es) => { if (es.some((x) => x.isIntersecting)) { io.disconnect(); load(); } }, { rootMargin: "200px" }); io.observe(nl);
+  });
   if (CFG.beehiivPublicationUrl) {
     const a = document.createElement("a"); a.href = CFG.beehiivPublicationUrl; a.target = "_blank"; a.rel = "noopener"; a.textContent = "newsletter archive";
     const p = $("#newsletter-archive"); p.textContent = "Read past issues: "; p.appendChild(a);

@@ -214,5 +214,7 @@ Free-plan limits: https://chatgpt.com/pricing
 
 ## How do I get the weekly AI Start Here email?
 
-A free weekly email: one thing that changed, one thing to try, one automation. Signup opens soon on the page above.
+A free email every Monday: one practical AI task to try, plus what changed that week. Subscribe: https://aistarthere-newsletter.beehiiv.com/
+
+Free starter guide: [Your first 5 things to try with AI](https://aistarthere.github.io/starter-guide/) ([PDF](https://aistarthere.github.io/starter-guide/ai-start-here-starter-guide.pdf))
 
