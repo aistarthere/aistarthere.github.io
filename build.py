@@ -2,7 +2,7 @@
 """Pre-render data/*.json into static HTML so the page works with JavaScript off
 (search crawlers and AI bots often don't run JS). JSON stays the source of truth.
 
-  python3 build.py            write index.html, index.md, llms.txt, llms-full.txt, robots.txt, sitemap.xml
+  python3 build.py            write index.html, guide pages' "Related guides", index.md, llms.txt, llms-full.txt, robots.txt, sitemap.xml, lastmod.json
   python3 build.py --check    exit 1 if any generated file is out of date (used by qa.sh)
   python3 build.py --assets   also (re)draw og-image.png, favicon.ico/.svg, apple-touch-icon.png
 
@@ -10,7 +10,7 @@ Idempotent: output depends only on data/*.json, site.json and config.js, so runn
 twice gives byte-identical files. Generated regions in index.html sit between
 <!-- build:NAME --> and <!-- /build:NAME --> markers; edit everything else by hand.
 """
-import html, json, re, sys, pathlib
+import hashlib, html, json, re, sys, pathlib
 from datetime import date
 from urllib.parse import urlparse
 
@@ -179,7 +179,27 @@ def jsonld():
     graph = {"@context": "https://schema.org", "@graph": [org, site, page, faq, items]}
     return '<script type="application/ld+json">\n' + json.dumps(graph, ensure_ascii=False, indent=1).replace("</", "<\\/") + "\n</script>"
 
-REGIONS = {"head": r_head, "jsonld": jsonld, "basics": r_basics, "models": r_models, "news": r_news, "try": r_try, "automations": r_autos}
+GUIDES = SITE.get("guides", [])
+def r_guides():
+    items = "".join(f'<li class="card"><h3><a href="{e(g["path"])}">{e(g["title"])}</a></h3><p>{e(g["blurb"])}</p></li>' for g in GUIDES)
+    return f'''<h2 id="guides-h">Guides: step-by-step help for one task</h2>
+      <p class="section-intro answer">Short, practical guides for complete beginners. Each one uses a free chatbot and gives you a prompt to copy.</p>
+      <ul class="grid cards guide-list">{items}</ul>'''
+
+def r_related(path):
+    """'Related guides' block for a guide page: home plus every other guide (absolute paths)."""
+    li = "".join(f'<li><a href="/{e(g["path"])}">{e(g["title"])}</a></li>' for g in GUIDES if g["path"] != path)
+    return f'''<nav class="related" aria-labelledby="related-h">
+    <h2 id="related-h">Related guides</h2>
+    <ul>{li}<li><a href="/#guides">All guides</a> · <a href="/#basics">AI basics for beginners</a></li></ul>
+  </nav>'''
+
+REGIONS = {"head": r_head, "jsonld": jsonld, "basics": r_basics, "models": r_models, "news": r_news, "try": r_try, "automations": r_autos, "guides": r_guides}
+
+def render_guide(path, src):
+    pat = re.compile(r"(<!-- build:related -->)(.*?)(<!-- /build:related -->)", re.S)
+    if not pat.search(src): sys.exit(f"{path}index.html is missing the <!-- build:related --> markers")
+    return pat.sub(lambda m: m.group(1) + "\n  " + r_related(path) + "\n  " + m.group(3), src, count=1)
 
 def render_index(src):
     for name, fn in REGIONS.items():
@@ -229,7 +249,8 @@ def llms_txt():
         "## Main page", "",
         f"- [AI Start Here (Markdown version)]({BASE}index.md): the whole page: beginner FAQ, latest models table, news, prompts to try, free automations",
         f"- [AI Start Here (HTML)]({BASE}): the same content for people",
-        f"- [Your first 5 things to try with AI]({BASE}starter-guide/): free one-page beginner guide, five practical tasks with copy-paste prompts ([PDF]({BASE}starter-guide/ai-start-here-starter-guide.pdf))", "",
+        f"- [Your first 5 things to try with AI]({BASE}starter-guide/): free one-page beginner guide, five practical tasks with copy-paste prompts ([PDF]({BASE}starter-guide/ai-start-here-starter-guide.pdf))",
+        *[f"- [{g['title']}]({BASE}{g['path']}): {g['blurb']}" for g in GUIDES if g["path"] != "starter-guide/"], "",
         "## Data (source of truth, JSON)", "",
         f"- [Latest models]({BASE}data/models.json): company, model, release date, good for, free access, source URLs",
         f"- [News]({BASE}data/news.json): dated items with summary, why it matters, source URL",
@@ -257,19 +278,46 @@ def robots_txt():
     L += [f"Sitemap: {BASE}sitemap.xml", ""]
     return "\n".join(L)
 
-def sitemap():
+# ---------- sitemap with honest <lastmod> ----------
+# Google uses lastmod only if it is "consistently and verifiably accurate". Each page's date lives in
+# lastmod.json next to a hash of its visible text; the date moves to today only when that text changes.
+LASTMOD_FILE = HERE / "lastmod.json"
+SKIP_DIRS = {"qa", "data", "scripts", "node_modules"}
+def pages():
+    """Every indexable page: the home page plus each top-level folder with an index.html (new pages join automatically)."""
+    found = sorted(p.parent.name + "/" for p in HERE.glob("*/index.html") if p.parent.name not in SKIP_DIRS and not p.parent.name.startswith("."))
+    return [""] + found
+
+def page_hash(html_text):
+    body = re.sub(r"<script.*?</script>|<style.*?</style>|<nav\b.*?</nav>|<header\b.*?</header>", " ", html_text, flags=re.S)  # menus/related links aren't content
+    text = re.sub(r"\s+", " ", html.unescape(re.sub(r"<[^>]+>", " ", body))).strip()
+    return hashlib.sha256(text.encode()).hexdigest()[:16]
+
+def lastmods(rendered):
+    old = json.loads(LASTMOD_FILE.read_text()) if LASTMOD_FILE.exists() else {}
+    new = {}
+    for path in pages():
+        h = page_hash(rendered.get(path + "index.html") or (HERE / path / "index.html").read_text())
+        prev = old.get(path)
+        new[path] = prev if prev and prev["hash"] == h else {"hash": h, "date": date.today().isoformat()}
+    return new
+
+def sitemap(lm):
+    urls = "".join(f"  <url><loc>{e(BASE + p)}</loc><lastmod>{lm[p]['date']}</lastmod></url>\n" for p in pages())
     return f'''<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>{e(BASE)}</loc><lastmod>{LAST_MOD}</lastmod></url>
-  <url><loc>{e(BASE)}starter-guide/</loc><lastmod>2026-11-04</lastmod></url>
-</urlset>
+{urls}</urlset>
 '''
 
 def outputs():
     md = md_page()
-    return {"index.html": render_index((HERE / "index.html").read_text()), "index.md": md + "\n",
-            "llms.txt": llms_txt(), "llms-full.txt": llms_txt() + "\n---\n\n" + md + "\n",
-            "robots.txt": robots_txt(), "sitemap.xml": sitemap()}
+    out = {"index.html": render_index((HERE / "index.html").read_text())}
+    for g in GUIDES:
+        out[g["path"] + "index.html"] = render_guide(g["path"], (HERE / g["path"] / "index.html").read_text())
+    lm = lastmods(out)
+    out.update({"index.md": md + "\n", "llms.txt": llms_txt(), "llms-full.txt": llms_txt() + "\n---\n\n" + md + "\n",
+                "robots.txt": robots_txt(), "sitemap.xml": sitemap(lm), "lastmod.json": json.dumps(lm, indent=1, sort_keys=True) + "\n"})
+    return out
 
 # ---------- images (only with --assets) ----------
 def assets():

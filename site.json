@@ -9,5 +9,17 @@
   "lang": "en-IE",
   "organizationName": "AI Start Here",
   "themeColor": "#4f46e5",
-  "xHandle": "@aistarthere"
+  "xHandle": "@aistarthere",
+  "guides": [
+    {
+      "path": "starter-guide/",
+      "title": "Your first 5 things to try with AI",
+      "blurb": "Five practical tasks for a free chatbot, each with a copy-paste prompt. Printable."
+    },
+    {
+      "path": "summarise-email-with-ai/",
+      "title": "How to summarise a long email with AI",
+      "blurb": "Free, about 2 minutes: one prompt, steps for ChatGPT, Gemini and Copilot, and how to check the summary."
+    }
+  ]
 }

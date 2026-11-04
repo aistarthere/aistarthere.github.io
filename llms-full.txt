@@ -12,6 +12,7 @@
 - [AI Start Here (Markdown version)](https://aistarthere.github.io/index.md): the whole page: beginner FAQ, latest models table, news, prompts to try, free automations
 - [AI Start Here (HTML)](https://aistarthere.github.io/): the same content for people
 - [Your first 5 things to try with AI](https://aistarthere.github.io/starter-guide/): free one-page beginner guide, five practical tasks with copy-paste prompts ([PDF](https://aistarthere.github.io/starter-guide/ai-start-here-starter-guide.pdf))
+- [How to summarise a long email with AI](https://aistarthere.github.io/summarise-email-with-ai/): Free, about 2 minutes: one prompt, steps for ChatGPT, Gemini and Copilot, and how to check the summary.
 
 ## Data (source of truth, JSON)
 
