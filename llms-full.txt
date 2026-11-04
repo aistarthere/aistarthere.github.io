@@ -11,6 +11,7 @@
 
 - [AI Start Here (Markdown version)](https://aistarthere.github.io/index.md): the whole page: beginner FAQ, latest models table, news, prompts to try, free automations
 - [AI Start Here (HTML)](https://aistarthere.github.io/): the same content for people
+- [Your first 5 things to try with AI](https://aistarthere.github.io/starter-guide/): free one-page beginner guide, five practical tasks with copy-paste prompts ([PDF](https://aistarthere.github.io/starter-guide/ai-start-here-starter-guide.pdf))
 
 ## Data (source of truth, JSON)
 
@@ -243,5 +244,7 @@ Free-plan limits: https://chatgpt.com/pricing
 
 ## How do I get the weekly AI Start Here email?
 
-A free weekly email: one thing that changed, one thing to try, one automation. Signup opens soon on the page above.
+A free email every Monday: one practical AI task to try, plus what changed that week. Subscribe: https://aistarthere-newsletter.beehiiv.com/
+
+Free starter guide: [Your first 5 things to try with AI](https://aistarthere.github.io/starter-guide/) ([PDF](https://aistarthere.github.io/starter-guide/ai-start-here-starter-guide.pdf))
 

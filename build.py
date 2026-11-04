@@ -214,7 +214,7 @@ def md_page():
         L += [f"### {a['title']}", "", f"Level: {a['level']}. Time: {a['time']}. Tools: {', '.join(a['tools'])}.", ""]
         L += [f"{i}. {s}" for i, s in enumerate(a["steps"], 1)]
         L += ["", f"Free-plan limits: {a['freeLimitsSource']}", ""]
-    L += ["## How do I get the weekly AI Start Here email?", "", "A free weekly email: one thing that changed, one thing to try, one automation. Signup opens soon on the page above.", ""]
+    L += ["## How do I get the weekly AI Start Here email?", "", "A free email every Monday: one practical AI task to try, plus what changed that week. Subscribe: https://aistarthere-newsletter.beehiiv.com/", "", f"Free starter guide: [Your first 5 things to try with AI]({BASE}starter-guide/) ([PDF]({BASE}starter-guide/ai-start-here-starter-guide.pdf))", ""]
     return "\n".join(L)
 
 def llms_txt():
@@ -228,7 +228,8 @@ def llms_txt():
         f"- Last updated {LAST_MOD}. Newest models listed: {newest}.", "",
         "## Main page", "",
         f"- [AI Start Here (Markdown version)]({BASE}index.md): the whole page: beginner FAQ, latest models table, news, prompts to try, free automations",
-        f"- [AI Start Here (HTML)]({BASE}): the same content for people", "",
+        f"- [AI Start Here (HTML)]({BASE}): the same content for people",
+        f"- [Your first 5 things to try with AI]({BASE}starter-guide/): free one-page beginner guide, five practical tasks with copy-paste prompts ([PDF]({BASE}starter-guide/ai-start-here-starter-guide.pdf))", "",
         "## Data (source of truth, JSON)", "",
         f"- [Latest models]({BASE}data/models.json): company, model, release date, good for, free access, source URLs",
         f"- [News]({BASE}data/news.json): dated items with summary, why it matters, source URL",
@@ -260,6 +261,7 @@ def sitemap():
     return f'''<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url><loc>{e(BASE)}</loc><lastmod>{LAST_MOD}</lastmod></url>
+  <url><loc>{e(BASE)}starter-guide/</loc><lastmod>2026-11-04</lastmod></url>
 </urlset>
 '''
 

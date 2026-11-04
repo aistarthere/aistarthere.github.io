@@ -111,3 +111,44 @@ ul.srcs li a{display:inline-block;min-height:24px;padding:2px 0}
 .prompt{margin-bottom:0}
 [hidden]{display:none!important}
 .btn.is-disabled{background:var(--bg-alt);color:var(--muted);border-color:var(--line);cursor:not-allowed}
+
+/* --- added 2026-11-04: signup box + starter guide --- */
+.signup-box{border:2px solid var(--brand);border-radius:var(--radius);background:color-mix(in srgb,var(--brand) 8%,var(--bg));padding:18px 20px;margin:20px 0;box-shadow:var(--shadow)}
+.signup-box .sb-h{font-size:1.1rem;margin:0 0 4px}
+.signup-box h2{font-size:1.3rem;margin:0 0 6px}
+.signup-box .sb-p{color:var(--muted);margin:0 0 12px;font-size:.95rem}
+.signup-box .sb-links{margin:10px 0 0;font-size:.95rem}
+.nl-embed{min-height:48px;max-width:100%;overflow:hidden}
+.nl-embed iframe{max-width:100%}
+.hero .signup-box{max-width:640px}
+.guide{padding:24px 20px 40px}
+.guide h1{max-width:none}
+.guide .step{margin:22px 0}
+.guide .step h2{font-size:1.25rem;margin:0 0 8px;display:flex;align-items:center;gap:10px}
+.guide .n{display:inline-grid;place-items:center;width:30px;height:30px;border-radius:50%;background:var(--brand);color:var(--brand-ink);font-size:1rem;flex:none}
+.guide pre.prompt{white-space:pre-wrap;word-wrap:break-word;background:var(--bg-alt);border:1px solid var(--line);border-left:4px solid var(--brand);border-radius:10px;padding:12px 14px;font:0.95rem/1.5 ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;margin:8px 0}
+.guide .fine{font-size:.85rem;color:var(--muted)}
+.guide-nav{display:flex!important;position:static!important;flex-direction:row!important;padding:0!important;border:0!important;background:none!important}
+@media print{
+  @page{size:A4;margin:10mm}
+  :root{--bg:#fff;--bg-alt:#f5f7fb;--ink:#000;--muted:#333}
+  body{font-size:9.5pt;line-height:1.32;background:#fff;color:#000}
+  .topbar,.skip,.signup-box.top,.no-print,.nl-embed{display:none!important}
+  .guide{padding:0;max-width:none}
+  .guide h1{font-size:20pt;margin-bottom:6px}
+  .guide .lede{font-size:11pt;margin-bottom:8px}
+  .guide .step{margin:5px 0;break-inside:avoid}
+  .guide .step p,.guide .step ul,.guide .step ol{margin:2px 0}
+  .guide .eyebrow{margin:0}
+  .guide .step h2{font-size:12.5pt}
+  .guide pre.prompt{font-size:8.8pt;padding:5px 9px;margin:3px 0}
+  .signup-box.bottom{box-shadow:none;padding:5px 10px;margin:6px 0;break-inside:avoid}
+  .signup-box.bottom h2{font-size:11pt;margin:0}
+  .signup-box.bottom .sb-p{display:none}
+  .guide .lede{margin:0 0 4px;max-width:none}
+  .guide .step h2{margin:2px 0}
+  .guide .n{width:22px;height:22px;font-size:.85rem}
+  .guide h1{font-size:18pt}
+  .signup-box.bottom::after{content:"Subscribe free: aistarthere-newsletter.beehiiv.com";font-weight:700}
+  a{color:#000;text-decoration:none}
+}
