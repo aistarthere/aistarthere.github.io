@@ -152,3 +152,13 @@ ul.srcs li a{display:inline-block;min-height:24px;padding:2px 0}
   .signup-box.bottom::after{content:"Subscribe free: aistarthere-newsletter.beehiiv.com";font-weight:700}
   a{color:#000;text-decoration:none}
 }
+/* --- added 2026-11-04: guides hub + related guides --- */
+.guide-list{list-style:none;padding:0;margin:16px 0 0}
+.guide-list li h3{margin:0 0 6px;font-size:1.1rem}
+.guide-list li p{margin:0;color:var(--muted)}
+.related{border-top:1px solid var(--line);margin:28px 0 8px;padding-top:12px}
+.related h2{font-size:1.15rem;margin:0 0 6px}
+.related ul{margin:0;padding-left:20px}
+.related li{margin:4px 0}
+.guide ol.steps li{margin:6px 0}
+@media print{.related{display:none!important}}
