@@ -5,7 +5,7 @@
 - Every model row and news item cites the AI lab's or vendor's own page; follow those links before quoting a detail.
 - "TODO" in the data means the detail was not on the lab's page when checked; do not fill it in by guessing.
 - Content is researched with AI assistance and is not affiliated with any AI company.
-- Last updated 2026-10-26. Newest models listed: Muse Spark Open (Meta, 2026-10-15), Muse Wonder (Meta, 2026-10-12), Claude Haiku 5.5 (Anthropic, 2026-10-07).
+- Last updated 2026-11-13. Newest models listed: Gemini 4 Hydrogen (Google, 2026-11-12), Gemini 4 Carbon (Google, 2026-11-10), Claude Fable 5.2 (Anthropic, 2026-11-09).
 
 ## Main page
 

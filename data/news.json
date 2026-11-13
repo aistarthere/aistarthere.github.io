@@ -1,6 +1,41 @@
 {
-  "updated": "2026-10-26",
+  "updated": "2026-11-13",
   "items": [
+    {
+      "date": "2026-11-12",
+      "title": "Google's Gemini 4 Hydrogen is in the Gemini app and Search for everyone",
+      "summary": "Google launched Gemini 4 Hydrogen, a faster Gemini 4 model for everyday work, coding and short agent tasks. It is rolling out in the Gemini app and Google Search for all users; in the Gemini app, free users get it through automatic model selection when it is the right fit.",
+      "whyItMatters": "You may already be getting answers from a newer Google model in Search or the Gemini app, without changing any settings.",
+      "source": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-hydrogen/"
+    },
+    {
+      "date": "2026-11-10",
+      "title": "Gemini 4 Carbon is now available to paying users",
+      "summary": "Google made Gemini 4 Carbon, its strongest Gemini 4 model, available to paying developers through the Gemini API and to Google AI Ultra subscribers in the Gemini app, AI Mode in Search, and Google Antigravity. It uses the same introductory API price as Gemini 4 Argon.",
+      "whyItMatters": "Google's most capable model is no longer limited to a small test group, if you pay for Ultra or the API.",
+      "source": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-carbon-now-available/"
+    },
+    {
+      "date": "2026-11-10",
+      "title": "Businesses can now claim a profile in ChatGPT",
+      "summary": "OpenAI launched Businesses in ChatGPT in beta. Eligible businesses where ChatGPT is available can claim a profile in Business Hub, keep details and product feeds up to date, and see aggregated mention and click numbers. Eligible US ecommerce and online-service businesses can also add a clearly labelled Business Agent.",
+      "whyItMatters": "If you run a small shop, you can start putting accurate information about it into ChatGPT; if you are comparing products, some follow-up chats may be with a business's own agent, which OpenAI says is labelled separately.",
+      "source": "https://openai.com/index/introducing-businesses-chatgpt"
+    },
+    {
+      "date": "2026-11-09",
+      "title": "Anthropic launches Claude Fable 5.2 and Mythos 5.2",
+      "summary": "Anthropic released Claude Fable 5.2, an upgrade of its model for the hardest technical work, and Claude Mythos 5.2, the same underlying model for vetted cybersecurity and life-sciences organisations. Fable 5.2 is available on Anthropic's platforms; it is not on the Free plan (Pro can use it with usage credits; Max and Ultra include some Fable use).",
+      "whyItMatters": "If you already pay for Claude, a stronger top model is now available for the toughest jobs.",
+      "source": "https://www.anthropic.com/claude-fable-and-mythos-5-2"
+    },
+    {
+      "date": "2026-11-06",
+      "title": "Meta brings Wonder-style memory to Muse and Meta AI",
+      "summary": "Meta says it has rolled out specialised versions of its existing models, trained with Muse Wonder, to people who use the Muse app and Meta AI. The update is meant to remember important details better and keep going when a task hits a snag.",
+      "whyItMatters": "If you already use Meta AI or Muse, the assistant may now hold onto context and finish everyday tasks more reliably.",
+      "source": "https://research.meta.ai/blog/specialized-models-for-muse-and-metaai"
+    },
     {
       "date": "2026-10-22",
       "title": "Anthropic hands its 'Agent Skills' standard to the Agentic AI Foundation",
@@ -28,13 +63,6 @@
       "summary": "Anthropic says Haiku 5.5 costs around 75% less to run than Haiku 4.5. Sonnet 5.5 cache reads were also halved.",
       "whyItMatters": "Small, cheap models keep getting better, so AI features get cheaper to build.",
       "source": "https://www.anthropic.com/claude-haiku-5-5"
-    },
-    {
-      "date": "2026-10-06",
-      "title": "Mistral previews Mistral Large 4, trained in Europe",
-      "summary": "A 1-trillion-parameter multimodal model, trained in Mistral's own European datacenters. Weights are promised by the end of October.",
-      "whyItMatters": "A strong European option for people and businesses who care where their AI runs.",
-      "source": "https://mistral.ai/news/mistral-large-4/"
     }
   ]
 }

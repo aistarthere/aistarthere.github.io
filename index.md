@@ -51,29 +51,53 @@ Go deeper (free): [Elements of AI: free online course for non-experts (Universit
 
 ## What are the latest AI models?
 
-_Last checked: 2026-10-26_
+_Last checked: 2026-11-13_
 
 | Company | Model | Released | Good for | Free access? | Sources |
 |---|---|---|---|---|---|
+| Google | Gemini 4 Hydrogen | 2026-11-12 | Fast everyday coding and agent-style tasks; also used in Google Search | Yes, in the Gemini app (auto-selected for free users when it fits) and in Google Search for all users | [blog.google](https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-hydrogen/) |
+| Google | Gemini 4 Carbon | 2026-11-10 | Google's strongest model for hard coding, long research and cybersecurity work | No. Paid Gemini API, and Google AI Ultra subscribers in the Gemini app, AI Mode in Search, and Antigravity | [blog.google](https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-carbon-now-available/) |
+| Anthropic | Claude Fable 5.2 | 2026-11-09 | The hardest technical work: long coding jobs, science, maths and research | No (not on Claude's Free plan; Pro via usage credits; Max and Ultra include some Fable use) | [anthropic.com](https://www.anthropic.com/claude-fable-and-mythos-5-2) [claude.com](https://claude.com/pricing) |
+| Anthropic | Claude Mythos 5.2 | 2026-11-09 | Same model as Fable 5.2, for vetted cybersecurity and life-sciences organisations | No (Cyber and Life Sciences Verification Programmes only) | [anthropic.com](https://www.anthropic.com/claude-fable-and-mythos-5-2) [claude.com](https://claude.com/pricing) |
+| Mistral AI (France) | Mistral Large 4 (Le Chonk) | 2026-10-29 | Open-weight European model for coding, documents and defensive security; you can run it yourself | Yes: open weights on Hugging Face (Mistral Ecosystem Open-Weight licence; Model-as-a-Service needs a separate licence). API priced at $0.70/$2.10 per million tokens | [mistral.ai](https://mistral.ai/news/mistral-large-4-oss/) [mistral.ai](https://mistral.ai/news/mistral-large-4/) |
+| Moonshot AI | Kimi K3.1 Pro | 2026-10-24 | Coding, 3D creation, financial research | Yes: on Kimi.ai and apps; open weights on Hugging Face (moonshotai/Kimi-K3.1-Pro) | [kimi.ai](https://www.kimi.ai/blog/kimi-k3-1-pro) [huggingface.co](https://huggingface.co/moonshotai/Kimi-K3.1-Pro) |
 | Meta | Muse Spark Open | 2026-10-15 | Open-weight model for coding and agents you can run yourself (needs very powerful hardware) | Weights downloadable; Meta says the licence lets many developers use it free | [research.meta.ai](https://research.meta.ai/blog/muse-spark-open) |
-| Meta | Muse Wonder | 2026-10-12 | Agent-style tasks, e.g. insurance claims, leases, building an app | TODO (developer API and Muse Code now; consumer rollout to subscribers first) | [about.fb.com](https://about.fb.com/news/2026/10/introducing-muse-wonder-models/) |
+| Meta | Muse Wonder | 2026-10-12 | Agent-style tasks, e.g. insurance claims, leases, building an app | API and Muse Code now; Muse consumer rollout first to subscribers (12 Oct post). A 6 Nov post rolled Wonder-trained specialised models to Muse and Meta AI users | [about.fb.com](https://about.fb.com/news/2026/10/introducing-muse-wonder-models/) |
 | Anthropic | Claude Haiku 5.5 | 2026-10-07 | Fast, cheap summaries, sorting and high-volume tasks | Haiku is on Claude's Free plan, with limits (version not named) | [anthropic.com](https://www.anthropic.com/claude-haiku-5-5) [claude.com](https://claude.com/pricing) |
-| Mistral AI (France) | Mistral Large 4 (preview) | 2026-10-06 | European-built open-weight multimodal model; coding, agents, documents | TODO (preview API on Mistral Studio; weights promised by end of October) | [mistral.ai](https://mistral.ai/news/mistral-large-4/) |
-| Google | Gemini 4 Argon | 2026-09-30 | Complex software engineering, legal/finance work, cyber defence | No. Currently trusted testers only; paid API and Google AI Ultra first | [blog.google](https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-argon/) |
+| Google | Gemini 4 Argon | 2026-09-30 | Complex software engineering, legal/finance work, cyber defence | No. Paid Gemini API, and Google AI Pro/Ultra in the Gemini app and AI Mode in Search (Ultra also in Antigravity); not on the free tier | [blog.google](https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-argon/) [blog.google](https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-argon/) |
 | OpenAI | GPT-6.1 Sol | 2026-09-29 | Coding, PDFs/documents and multi-step business tasks; OpenAI says near GPT-6 Astra quality at a fifth of Astra's price | No (Plus and above in ChatGPT; API is paid) | [openai.com](https://openai.com/index/introducing-gpt-6-1-sol/) [chatgpt.com](https://chatgpt.com/pricing) |
 | Anthropic | Claude Sonnet 5.5 | 2026-09-28 | Everyday tasks, fixing bugs, polished documents, slides and spreadsheets | Sonnet is on Claude's Free plan, with limits (pricing page does not name the version) | [anthropic.com](https://www.anthropic.com/claude-sonnet-5-5) [claude.com](https://claude.com/pricing) |
 | OpenAI | GPT-6 Luna | 2026-09-22 | Fast, low-cost everyday work | Yes, in the ChatGPT desktop app for Free and Go users (per launch post) | [openai.com](https://openai.com/index/introducing-gpt-6-sol-and-luna/) |
 | Anthropic | Claude Opus 5.5 | 2026-09-22 | Long, complex coding and knowledge work | No (Opus is not on the Free plan) | [anthropic.com](https://www.anthropic.com/claude-opus-5-5) [claude.com](https://claude.com/pricing) |
-| Anthropic | Claude Fable 5.1 | 2026-09-15 | Anthropic's top generally available model for long-running coding, knowledge work and research | No (not on Claude's Free plan; Pro via usage credits) | [anthropic.com](https://www.anthropic.com/claude-fable-and-mythos-5-1) [claude.com](https://claude.com/pricing) |
+| xAI | Grok 4.7 | 2026-09-21 | Coding and knowledge work | TODO (page lists Cursor, Grok Build and the paid API; no clear free consumer access) | [x.ai](https://x.ai/news/grok-4-7) |
+| Anthropic | Claude Fable 5.1 | 2026-09-15 | Previous Fable release for long-running coding, knowledge work and research (superseded by Fable 5.2) | No (not on Claude's Free plan; Pro via usage credits) | [anthropic.com](https://www.anthropic.com/claude-fable-and-mythos-5-1) [claude.com](https://claude.com/pricing) |
 | Google | Gemini 3.8 Flash | 2026-09-02 | Low-cost reasoning and coding 'workhorse' | In the Gemini app it is listed for AI Pro/Ultra subscribers. Free tier for developers: TODO | [blog.google](https://blog.google/innovation-and-ai/models-and-research/gemini-models/3-8-flash-and-3-8-flash-cyber/) |
 | OpenAI | GPT-6 Astra | TODO (Sept 2026, exact day not on the page opened) | OpenAI's top model for the hardest work | No (ChatGPT Plus and above) | [openai.com](https://openai.com/index/introducing-gpt-6-sol-and-luna/) [chatgpt.com](https://chatgpt.com/pricing) |
-| xAI | Grok 4.7 | TODO (date not shown on the page opened) | Coding and knowledge work | TODO (listed in Cursor, Grok Build and the paid API) | [x.ai](https://x.ai/news/grok-4-7) |
 | DeepSeek | DeepSeek-V4.1-Flash-1017 | TODO (page undated; release ID suggests 17 Oct 2026) | Building whole projects with code; cheaper, shorter answers than the previous version | Open weights on Hugging Face; live on DeepSeek website and app (price not stated) | [api-docs.deepseek.com](https://api-docs.deepseek.com/news/news261017/) |
-| Moonshot AI | Kimi K3.1 Pro | TODO (date not shown on the page opened) | Coding, 3D creation, financial research | TODO (on Kimi.ai and apps; weights promised by 4 Nov 2026) | [kimi.ai](https://www.kimi.ai/blog/kimi-k3-1-pro) |
 
 ## What's new in AI this week?
 
-_Last updated: 2026-10-26_
+_Last updated: 2026-11-13_
+
+### Google's Gemini 4 Hydrogen is in the Gemini app and Search for everyone (2026-11-12)
+
+Google launched Gemini 4 Hydrogen, a faster Gemini 4 model for everyday work, coding and short agent tasks. It is rolling out in the Gemini app and Google Search for all users; in the Gemini app, free users get it through automatic model selection when it is the right fit. Why it matters: You may already be getting answers from a newer Google model in Search or the Gemini app, without changing any settings. [Source](https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-hydrogen/)
+
+### Gemini 4 Carbon is now available to paying users (2026-11-10)
+
+Google made Gemini 4 Carbon, its strongest Gemini 4 model, available to paying developers through the Gemini API and to Google AI Ultra subscribers in the Gemini app, AI Mode in Search, and Google Antigravity. It uses the same introductory API price as Gemini 4 Argon. Why it matters: Google's most capable model is no longer limited to a small test group, if you pay for Ultra or the API. [Source](https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-carbon-now-available/)
+
+### Businesses can now claim a profile in ChatGPT (2026-11-10)
+
+OpenAI launched Businesses in ChatGPT in beta. Eligible businesses where ChatGPT is available can claim a profile in Business Hub, keep details and product feeds up to date, and see aggregated mention and click numbers. Eligible US ecommerce and online-service businesses can also add a clearly labelled Business Agent. Why it matters: If you run a small shop, you can start putting accurate information about it into ChatGPT; if you are comparing products, some follow-up chats may be with a business's own agent, which OpenAI says is labelled separately. [Source](https://openai.com/index/introducing-businesses-chatgpt)
+
+### Anthropic launches Claude Fable 5.2 and Mythos 5.2 (2026-11-09)
+
+Anthropic released Claude Fable 5.2, an upgrade of its model for the hardest technical work, and Claude Mythos 5.2, the same underlying model for vetted cybersecurity and life-sciences organisations. Fable 5.2 is available on Anthropic's platforms; it is not on the Free plan (Pro can use it with usage credits; Max and Ultra include some Fable use). Why it matters: If you already pay for Claude, a stronger top model is now available for the toughest jobs. [Source](https://www.anthropic.com/claude-fable-and-mythos-5-2)
+
+### Meta brings Wonder-style memory to Muse and Meta AI (2026-11-06)
+
+Meta says it has rolled out specialised versions of its existing models, trained with Muse Wonder, to people who use the Muse app and Meta AI. The update is meant to remember important details better and keep going when a task hits a snag. Why it matters: If you already use Meta AI or Muse, the assistant may now hold onto context and finish everyday tasks more reliably. [Source](https://research.meta.ai/blog/specialized-models-for-muse-and-metaai)
 
 ### Anthropic hands its 'Agent Skills' standard to the Agentic AI Foundation (2026-10-22)
 
@@ -90,10 +114,6 @@ Meta calls it the most capable US open-weight model to date: 816B parameters (42
 ### Anthropic launches Claude Haiku 5.5 and cuts a Sonnet price (2026-10-07)
 
 Anthropic says Haiku 5.5 costs around 75% less to run than Haiku 4.5. Sonnet 5.5 cache reads were also halved. Why it matters: Small, cheap models keep getting better, so AI features get cheaper to build. [Source](https://www.anthropic.com/claude-haiku-5-5)
-
-### Mistral previews Mistral Large 4, trained in Europe (2026-10-06)
-
-A 1-trillion-parameter multimodal model, trained in Mistral's own European datacenters. Weights are promised by the end of October. Why it matters: A strong European option for people and businesses who care where their AI runs. [Source](https://mistral.ai/news/mistral-large-4/)
 
 ## What can I try with AI today?
 
