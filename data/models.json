@@ -1,7 +1,41 @@
 {
-  "updated": "2026-10-26",
+  "updated": "2026-11-13",
   "howToUpdate": "Add a row when a lab publishes a release post. Only use the lab's own page as the source. If a field is not on that page, write TODO.",
   "models": [
+    {
+      "company": "Google",
+      "model": "Gemini 4 Hydrogen",
+      "released": "2026-11-12",
+      "goodFor": "Fast everyday coding and agent-style tasks; also used in Google Search",
+      "free": "Yes, in the Gemini app (auto-selected for free users when it fits) and in Google Search for all users",
+      "source": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-hydrogen/"
+    },
+    {
+      "company": "Google",
+      "model": "Gemini 4 Carbon",
+      "released": "2026-11-10",
+      "goodFor": "Google's strongest model for hard coding, long research and cybersecurity work",
+      "free": "No. Paid Gemini API, and Google AI Ultra subscribers in the Gemini app, AI Mode in Search, and Antigravity",
+      "source": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-carbon-now-available/"
+    },
+    {
+      "company": "Anthropic",
+      "model": "Claude Fable 5.2",
+      "released": "2026-11-09",
+      "goodFor": "The hardest technical work: long coding jobs, science, maths and research",
+      "free": "No (not on Claude's Free plan; Pro via usage credits; Max and Ultra include some Fable use)",
+      "source": "https://www.anthropic.com/claude-fable-and-mythos-5-2",
+      "source2": "https://claude.com/pricing"
+    },
+    {
+      "company": "Anthropic",
+      "model": "Claude Mythos 5.2",
+      "released": "2026-11-09",
+      "goodFor": "Same model as Fable 5.2, for vetted cybersecurity and life-sciences organisations",
+      "free": "No (Cyber and Life Sciences Verification Programmes only)",
+      "source": "https://www.anthropic.com/claude-fable-and-mythos-5-2",
+      "source2": "https://claude.com/pricing"
+    },
     {
       "company": "OpenAI",
       "model": "GPT-6.1 Sol",
@@ -60,8 +94,9 @@
       "model": "Gemini 4 Argon",
       "released": "2026-09-30",
       "goodFor": "Complex software engineering, legal/finance work, cyber defence",
-      "free": "No. Currently trusted testers only; paid API and Google AI Ultra first",
-      "source": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-argon/"
+      "free": "No. Paid Gemini API, and Google AI Pro/Ultra in the Gemini app and AI Mode in Search (Ultra also in Antigravity); not on the free tier",
+      "source": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-argon/",
+      "source2": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-argon/"
     },
     {
       "company": "Google",
@@ -76,7 +111,7 @@
       "model": "Muse Wonder",
       "released": "2026-10-12",
       "goodFor": "Agent-style tasks, e.g. insurance claims, leases, building an app",
-      "free": "TODO (developer API and Muse Code now; consumer rollout to subscribers first)",
+      "free": "API and Muse Code now; Muse consumer rollout first to subscribers (12 Oct post). A 6 Nov post rolled Wonder-trained specialised models to Muse and Meta AI users",
       "source": "https://about.fb.com/news/2026/10/introducing-muse-wonder-models/"
     },
     {
@@ -90,18 +125,19 @@
     {
       "company": "xAI",
       "model": "Grok 4.7",
-      "released": "TODO (date not shown on the page opened)",
+      "released": "2026-09-21",
       "goodFor": "Coding and knowledge work",
-      "free": "TODO (listed in Cursor, Grok Build and the paid API)",
+      "free": "TODO (page lists Cursor, Grok Build and the paid API; no clear free consumer access)",
       "source": "https://x.ai/news/grok-4-7"
     },
     {
       "company": "Mistral AI (France)",
-      "model": "Mistral Large 4 (preview)",
-      "released": "2026-10-06",
-      "goodFor": "European-built open-weight multimodal model; coding, agents, documents",
-      "free": "TODO (preview API on Mistral Studio; weights promised by end of October)",
-      "source": "https://mistral.ai/news/mistral-large-4/"
+      "model": "Mistral Large 4 (Le Chonk)",
+      "released": "2026-10-29",
+      "goodFor": "Open-weight European model for coding, documents and defensive security; you can run it yourself",
+      "free": "Yes: open weights on Hugging Face (Mistral Ecosystem Open-Weight licence; Model-as-a-Service needs a separate licence). API priced at $0.70/$2.10 per million tokens",
+      "source": "https://mistral.ai/news/mistral-large-4-oss/",
+      "source2": "https://mistral.ai/news/mistral-large-4/"
     },
     {
       "company": "DeepSeek",
@@ -114,16 +150,17 @@
     {
       "company": "Moonshot AI",
       "model": "Kimi K3.1 Pro",
-      "released": "TODO (date not shown on the page opened)",
+      "released": "2026-10-24",
       "goodFor": "Coding, 3D creation, financial research",
-      "free": "TODO (on Kimi.ai and apps; weights promised by 4 Nov 2026)",
-      "source": "https://www.kimi.ai/blog/kimi-k3-1-pro"
+      "free": "Yes: on Kimi.ai and apps; open weights on Hugging Face (moonshotai/Kimi-K3.1-Pro)",
+      "source": "https://www.kimi.ai/blog/kimi-k3-1-pro",
+      "source2": "https://huggingface.co/moonshotai/Kimi-K3.1-Pro"
     },
     {
       "company": "Anthropic",
       "model": "Claude Fable 5.1",
       "released": "2026-09-15",
-      "goodFor": "Anthropic's top generally available model for long-running coding, knowledge work and research",
+      "goodFor": "Previous Fable release for long-running coding, knowledge work and research (superseded by Fable 5.2)",
       "free": "No (not on Claude's Free plan; Pro via usage credits)",
       "source": "https://www.anthropic.com/claude-fable-and-mythos-5-1",
       "source2": "https://claude.com/pricing",
