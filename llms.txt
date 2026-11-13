@@ -3,7 +3,7 @@
 > New to AI? Plain-English basics, the latest AI models, sourced news, prompts to try and free automations. Every fact links to its source. Updated weekly. Written for busy adults (Ireland/EU first) who are new to AI. Free tools only.
 
 - Every model row and news item cites the AI lab's or vendor's own page; follow those links before quoting a detail.
-- "TODO" in the data means the detail was not on the lab's page when checked; do not fill it in by guessing.
+- If a date or access detail was not on the lab's page when checked, the row says so; do not fill it in by guessing.
 - Content is researched with AI assistance and is not affiliated with any AI company.
 - Last updated 2026-11-13. Newest models listed: Gemini 4 Hydrogen (Google, 2026-11-12), Gemini 4 Carbon (Google, 2026-11-10), Claude Fable 5.2 (Anthropic, 2026-11-09).
 
@@ -13,6 +13,7 @@
 - [AI Start Here (HTML)](https://aistarthere.github.io/): the same content for people
 - [Your first 5 things to try with AI](https://aistarthere.github.io/starter-guide/): free one-page beginner guide, five practical tasks with copy-paste prompts ([PDF](https://aistarthere.github.io/starter-guide/ai-start-here-starter-guide.pdf))
 - [How to summarise a long email with AI](https://aistarthere.github.io/summarise-email-with-ai/): Free, about 2 minutes: one prompt, steps for ChatGPT, Gemini and Copilot, and how to check the summary.
+- [How to write a difficult email with AI](https://aistarthere.github.io/write-difficult-email-with-ai/): A copy-paste prompt, two tone variants, a worked example, a privacy check and what to review before you send.
 
 ## Data (source of truth, JSON)
 

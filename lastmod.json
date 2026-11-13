@@ -1,14 +1,18 @@
 {
  "": {
   "date": "2026-11-13",
-  "hash": "513fe0edb157d6c1"
+  "hash": "89e7451d0497f283"
  },
  "starter-guide/": {
-  "date": "2026-11-04",
-  "hash": "e755b7370f1c03f7"
+  "date": "2026-11-13",
+  "hash": "f65e441d6b18e978"
  },
  "summarise-email-with-ai/": {
-  "date": "2026-11-04",
-  "hash": "561a34b329034da9"
+  "date": "2026-11-13",
+  "hash": "50d4c6222ac69157"
+ },
+ "write-difficult-email-with-ai/": {
+  "date": "2026-11-13",
+  "hash": "1643668045d5c73e"
  }
 }

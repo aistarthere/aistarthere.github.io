@@ -2,7 +2,7 @@
 
 > New to AI? Plain-English basics, the latest AI models, sourced news, prompts to try and free automations. Every fact links to its source. Updated weekly.
 
-Content is researched with AI assistance and every fact links to the lab's or vendor's own page. "TODO" means we could not confirm a detail on that page yet.
+Content is researched with AI assistance and every fact links to the lab's or vendor's own page. If a date or access detail is not on that page, we say so rather than guess.
 Canonical page: https://aistarthere.github.io/
 
 ## AI 101: what do I need to know first?
@@ -69,11 +69,11 @@ _Last checked: 2026-11-13_
 | Anthropic | Claude Sonnet 5.5 | 2026-09-28 | Everyday tasks, fixing bugs, polished documents, slides and spreadsheets | Sonnet is on Claude's Free plan, with limits (pricing page does not name the version) | [anthropic.com](https://www.anthropic.com/claude-sonnet-5-5) [claude.com](https://claude.com/pricing) |
 | OpenAI | GPT-6 Luna | 2026-09-22 | Fast, low-cost everyday work | Yes, in the ChatGPT desktop app for Free and Go users (per launch post) | [openai.com](https://openai.com/index/introducing-gpt-6-sol-and-luna/) |
 | Anthropic | Claude Opus 5.5 | 2026-09-22 | Long, complex coding and knowledge work | No (Opus is not on the Free plan) | [anthropic.com](https://www.anthropic.com/claude-opus-5-5) [claude.com](https://claude.com/pricing) |
-| xAI | Grok 4.7 | 2026-09-21 | Coding and knowledge work | TODO (page lists Cursor, Grok Build and the paid API; no clear free consumer access) | [x.ai](https://x.ai/news/grok-4-7) |
+| xAI | Grok 4.7 | 2026-09-21 | Coding and knowledge work | No free consumer access listed. The announcement names Cursor, Grok Build, the Grok API (from $2/$6 per million tokens), third-party coding harnesses, and model routers and cloud platforms | [x.ai](https://x.ai/news/grok-4-7) |
 | Anthropic | Claude Fable 5.1 | 2026-09-15 | Previous Fable release for long-running coding, knowledge work and research (superseded by Fable 5.2) | No (not on Claude's Free plan; Pro via usage credits) | [anthropic.com](https://www.anthropic.com/claude-fable-and-mythos-5-1) [claude.com](https://claude.com/pricing) |
-| Google | Gemini 3.8 Flash | 2026-09-02 | Low-cost reasoning and coding 'workhorse' | In the Gemini app it is listed for AI Pro/Ultra subscribers. Free tier for developers: TODO | [blog.google](https://blog.google/innovation-and-ai/models-and-research/gemini-models/3-8-flash-and-3-8-flash-cyber/) |
-| OpenAI | GPT-6 Astra | TODO (Sept 2026, exact day not on the page opened) | OpenAI's top model for the hardest work | No (ChatGPT Plus and above) | [openai.com](https://openai.com/index/introducing-gpt-6-sol-and-luna/) [chatgpt.com](https://chatgpt.com/pricing) |
-| DeepSeek | DeepSeek-V4.1-Flash-1017 | TODO (page undated; release ID suggests 17 Oct 2026) | Building whole projects with code; cheaper, shorter answers than the previous version | Open weights on Hugging Face; live on DeepSeek website and app (price not stated) | [api-docs.deepseek.com](https://api-docs.deepseek.com/news/news261017/) |
+| OpenAI | GPT-6 Astra | 2026-09-03 | OpenAI's top model for the hardest work | No (ChatGPT Plus, Pro, Business and Enterprise; not on the Free plan) | [openai.com](https://openai.com/index/gpt-6-astra/) [openai.com](https://openai.com/index/safety-overview-gpt-6-astra/) |
+| Google | Gemini 3.8 Flash | 2026-09-02 | Low-cost reasoning and coding 'workhorse' | No free consumer access listed. In the Gemini app, AI Mode in Google Search and Gemini in Google Sheets it is for Google AI Pro and Ultra subscribers. Developers can use it in the Gemini API (introductory price $0.75/$3.75 per million input/output tokens) via Google AI Studio, Android Studio and Antigravity | [blog.google](https://blog.google/innovation-and-ai/models-and-research/gemini-models/3-8-flash-and-3-8-flash-cyber/) |
+| DeepSeek | DeepSeek-V4.1-Flash-1017 | Date not published | Building whole projects with code; cheaper, shorter answers than the previous version | Open weights on Hugging Face; live on DeepSeek website and app (price not stated) | [api-docs.deepseek.com](https://api-docs.deepseek.com/news/news261017/) |
 
 ## What's new in AI this week?
 
@@ -163,7 +163,7 @@ Tip: Never upload photos of IDs, bank cards or other people's private info. [Sou
 
 ## Which everyday tasks can I automate for free?
 
-_Last updated: 2026-10-26_
+_Last updated: 2026-11-13_
 
 ### Log important emails to a spreadsheet automatically
 
@@ -204,7 +204,7 @@ Free-plan limits: https://claude.com/pricing
 Level: Intermediate. Time: 40 min. Tools: Make (Free), Google Sheets, Any free chatbot.
 
 1. Pick 3 to 5 sites you trust that have an RSS feed.
-2. In Make, create a scenario: an RSS 'watch feed items' module, then Google Sheets 'Add a row' (title, link, date). TODO: confirm the module names in Make's editor.
+2. In Make, create a scenario: an RSS 'Watch RSS Feed Items' module, then a Google Sheets 'Add a Row' module (map title, link and date). Those are the module names in Make's help for RSS and Google Sheets.
 3. Schedule it to run once a day. Make's free plan gives 1,000 credits a month, and most actions use 1 credit.
 4. On Fridays, paste the week's rows into a chatbot: 'Group these into themes and write a 5-bullet digest with the links.'
 
