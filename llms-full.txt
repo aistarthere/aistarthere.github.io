@@ -14,6 +14,7 @@
 - [Your first 5 things to try with AI](https://aistarthere.github.io/starter-guide/): free one-page beginner guide, five practical tasks with copy-paste prompts ([PDF](https://aistarthere.github.io/starter-guide/ai-start-here-starter-guide.pdf))
 - [How to summarise a long email with AI](https://aistarthere.github.io/summarise-email-with-ai/): Free, about 2 minutes: one prompt, steps for ChatGPT, Gemini and Copilot, and how to check the summary.
 - [How to write a difficult email with AI](https://aistarthere.github.io/write-difficult-email-with-ai/): A copy-paste prompt, two tone variants, a worked example, a privacy check and what to review before you send.
+- [How to turn receipt photos into an expenses sheet with AI](https://aistarthere.github.io/receipts-to-expenses-sheet-with-ai/): Photograph a few receipts, extract the date, shop and total with a free chatbot, then paste the rows into a Google Sheet.
 
 ## Data (source of truth, JSON)
 
@@ -197,6 +198,10 @@ Tip: Never upload photos of IDs, bank cards or other people's private info. [Sou
 
 _Last updated: 2026-11-13_
 
+The idea with the most votes becomes the next full guide. We announce it in the weekly newsletter.
+
+Voted for by readers, now a full guide: [How to turn receipt photos into an expenses sheet with AI](https://aistarthere.github.io/receipts-to-expenses-sheet-with-ai/)
+
 ### Log important emails to a spreadsheet automatically
 
 Level: Beginner. Time: 20 min. Tools: Zapier (Free), Gmail, Google Sheets.
@@ -253,14 +258,14 @@ Level: Beginner. Time: 30 min. Tools: ChatGPT (Free) - Projects.
 
 Free-plan limits: https://chatgpt.com/pricing
 
-### Snap receipts into a simple expenses sheet
+### Turn a job advert into a tailored application checklist
 
-Level: Beginner. Time: 15 min. Tools: ChatGPT (Free, limited uploads), Google Sheets.
+Level: Beginner. Time: 15 min. Tools: ChatGPT or Gemini (Free).
 
-1. Create a Google Sheet with columns: Date, Shop, Total (EUR), Category.
-2. Take photos of a few receipts and upload them to ChatGPT with: 'Extract date, shop, total in euro and a category for each. Output CSV with headers Date,Shop,Total,Category.'
-3. Check every number against the receipt. AI misreads photos.
-4. Paste the CSV into the sheet (Data > Split text to columns if needed) and add a SUM at the bottom.
+1. Copy the job advert (or just the requirements section) into a new chat in ChatGPT or Gemini.
+2. Underneath, add a short list of your relevant experience. Leave out private details: no PPS number, address, phone number or exact current salary unless you would be happy for a stranger at that company to see them.
+3. Use this prompt: 'Here is a job advert and a short list of my experience. Give me: 1) a checklist of the main requirements, marked as "I have this", "I can show something close", or "I don't have this" based only on what I wrote, 2) five things I should mention in an application, 3) five likely interview questions. If the advert doesn't mention something, say so rather than guessing.'
+4. Check every tick against the advert and your own experience before you use it.
 
 Free-plan limits: https://chatgpt.com/pricing
 

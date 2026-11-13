@@ -121,6 +121,14 @@ def r_autos():
     sug_btn = (f'<a class="btn primary small" id="suggest" href="{e(sug)}" rel="noopener" target="_blank">💡 Suggest an idea</a>' if sug
                else '<span class="btn primary small is-disabled" id="suggest">💡 Suggestions: coming soon</span>')
     note = ("Votes refresh every few minutes. One vote per idea, please." if live else "Voting opens soon. Counts show 0 until it's live; there are no fake numbers here.")
+    nl = CFG.get("beehiivPublicationUrl") or "https://aistarthere-newsletter.beehiiv.com/"
+    vote_next = f'<p class="fineprint" id="vote-next-guide">The idea with the most votes becomes the next full guide. We announce it in the {ext(nl, "weekly newsletter")}.</p>'
+    published = autos.get("publishedGuides") or []
+    if published:
+        links = " · ".join(f'<a href="/{e(g["path"])}">{e(g.get("guideTitle") or g["title"])}</a>' for g in published)
+        published_html = f'<p class="fineprint" id="published-guides">Voted for by readers: now a full guide — {links}.</p>'
+    else:
+        published_html = ""
     return f'''<h2 id="automations-h"><span class="num" aria-hidden="true">5</span> Which everyday tasks can I automate for free?</h2>
       <p class="section-intro answer">Logging emails to a spreadsheet, summarising form feedback and turning meeting notes into action items are good first automations. Every idea here uses free tools only, step by step. Upvote the ones you want expanded into full guides, or suggest your own.</p>
       {updated(autos["updated"])}
@@ -130,6 +138,8 @@ def r_autos():
         {sug_btn}
       </div>
       <p class="placeholder-note" id="votes-note">{e(note)}</p>
+      {vote_next}
+      {published_html}
       <div class="autos" id="auto-list">{"".join(out)}</div>'''
 
 def r_head():
@@ -230,6 +240,9 @@ def md_page():
     for t in tries["items"]:
         L += [f"### {t['title']} ({t['tool']})", "", f"Prompt: \"{t['prompt']}\"", "", f"Tip: {t['tip']}" + (f" [Source]({t['source']})" if t.get("source") else ""), ""]
     L += ["## Which everyday tasks can I automate for free?", "", f"_Last updated: {autos['updated']}_", ""]
+    L += ["The idea with the most votes becomes the next full guide. We announce it in the weekly newsletter.", ""]
+    if autos.get("publishedGuides"):
+        L += ["Voted for by readers, now a full guide: " + ", ".join(f"[{g.get('guideTitle') or g['title']}]({BASE + g['path']})" for g in autos["publishedGuides"]), ""]
     for a in autos["items"]:
         L += [f"### {a['title']}", "", f"Level: {a['level']}. Time: {a['time']}. Tools: {', '.join(a['tools'])}.", ""]
         L += [f"{i}. {s}" for i, s in enumerate(a["steps"], 1)]
