@@ -1,6 +1,14 @@
 {
   "updated": "2026-11-13",
   "note": "Every idea uses free tiers only. Free-plan limits are linked so you can check them before you build.",
+  "publishedGuides": [
+    {
+      "id": "receipt-tracker",
+      "title": "Snap receipts into a simple expenses sheet",
+      "path": "receipts-to-expenses-sheet-with-ai/",
+      "guideTitle": "How to turn receipt photos into an expenses sheet with AI"
+    }
+  ],
   "items": [
     {
       "id": "inbox-to-sheet",
@@ -90,19 +98,18 @@
       "freeLimitsSource": "https://chatgpt.com/pricing"
     },
     {
-      "id": "receipt-tracker",
-      "title": "Snap receipts into a simple expenses sheet",
+      "id": "job-ad-checklist",
+      "title": "Turn a job advert into a tailored application checklist",
       "level": "Beginner",
       "time": "15 min",
       "tools": [
-        "ChatGPT (Free, limited uploads)",
-        "Google Sheets"
+        "ChatGPT or Gemini (Free)"
       ],
       "steps": [
-        "Create a Google Sheet with columns: Date, Shop, Total (EUR), Category.",
-        "Take photos of a few receipts and upload them to ChatGPT with: 'Extract date, shop, total in euro and a category for each. Output CSV with headers Date,Shop,Total,Category.'",
-        "Check every number against the receipt. AI misreads photos.",
-        "Paste the CSV into the sheet (Data > Split text to columns if needed) and add a SUM at the bottom."
+        "Copy the job advert (or just the requirements section) into a new chat in ChatGPT or Gemini.",
+        "Underneath, add a short list of your relevant experience. Leave out private details: no PPS number, address, phone number or exact current salary unless you would be happy for a stranger at that company to see them.",
+        "Use this prompt: 'Here is a job advert and a short list of my experience. Give me: 1) a checklist of the main requirements, marked as \"I have this\", \"I can show something close\", or \"I don't have this\" based only on what I wrote, 2) five things I should mention in an application, 3) five likely interview questions. If the advert doesn't mention something, say so rather than guessing.'",
+        "Check every tick against the advert and your own experience before you use it."
       ],
       "freeLimitsSource": "https://chatgpt.com/pricing"
     }

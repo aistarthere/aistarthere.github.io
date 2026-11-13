@@ -25,6 +25,11 @@
       "path": "write-difficult-email-with-ai/",
       "title": "How to write a difficult email with AI",
       "blurb": "A copy-paste prompt, two tone variants, a worked example, a privacy check and what to review before you send."
+    },
+    {
+      "path": "receipts-to-expenses-sheet-with-ai/",
+      "title": "How to turn receipt photos into an expenses sheet with AI",
+      "blurb": "Photograph a few receipts, extract the date, shop and total with a free chatbot, then paste the rows into a Google Sheet."
     }
   ]
 }

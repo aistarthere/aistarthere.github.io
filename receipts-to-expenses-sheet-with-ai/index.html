@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>How to turn receipt photos into an expenses sheet with AI | AI Start Here</title>
+<meta name="description" content="Photograph a few receipts, extract the date, shop and total with a free chatbot, then paste the rows into a Google Sheet. Includes a copy-paste prompt, privacy check and how to verify every number.">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<link rel="canonical" href="https://aistarthere.github.io/receipts-to-expenses-sheet-with-ai/">
+<link rel="icon" href="/favicon.ico" sizes="32x32">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<meta name="theme-color" content="#4f46e5">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="AI Start Here">
+<meta property="og:locale" content="en_IE">
+<meta property="og:title" content="How to turn receipt photos into an expenses sheet with AI">
+<meta property="og:description" content="Photograph a few receipts, extract the date, shop and total with a free chatbot, then paste the rows into a Google Sheet.">
+<meta property="og:url" content="https://aistarthere.github.io/receipts-to-expenses-sheet-with-ai/">
+<meta property="og:image" content="https://aistarthere.github.io/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="AI Start Here. Get useful with AI this week, for free. Every fact links to its source.">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@aistarthere">
+<meta name="twitter:title" content="How to turn receipt photos into an expenses sheet with AI">
+<meta name="twitter:description" content="Photograph a few receipts, extract the date, shop and total with a free chatbot, then paste the rows into a Google Sheet.">
+<meta name="twitter:image" content="https://aistarthere.github.io/og-image.png">
+<meta name="twitter:image:alt" content="AI Start Here. Get useful with AI this week, for free. Every fact links to its source.">
+<link rel="stylesheet" href="/styles.css">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@graph":[{"@type":"Article","headline":"How to turn receipt photos into an expenses sheet with AI","url":"https://aistarthere.github.io/receipts-to-expenses-sheet-with-ai/","mainEntityOfPage":"https://aistarthere.github.io/receipts-to-expenses-sheet-with-ai/","inLanguage":"en","datePublished":"2026-11-13","dateModified":"2026-11-13","image":"https://aistarthere.github.io/og-image.png","author":{"@type":"Organization","name":"AI Start Here","url":"https://aistarthere.github.io/"},"publisher":{"@type":"Organization","name":"AI Start Here","url":"https://aistarthere.github.io/"}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://aistarthere.github.io/"},{"@type":"ListItem","position":2,"name":"Guides","item":"https://aistarthere.github.io/#guides"},{"@type":"ListItem","position":3,"name":"How to turn receipt photos into an expenses sheet with AI"}]}]}
+</script>
+</head>
+<body class="guide-page">
+<a class="skip" href="#main">Skip to content</a>
+<header class="topbar">
+  <a class="brand" href="/">AI <span>Start Here</span></a>
+  <nav class="nav guide-nav" aria-label="Site">
+    <a href="/">Home</a>
+    <a href="/#guides">Guides</a>
+    <a href="#subscribe" class="nav-cta">Newsletter</a>
+  </nav>
+</header>
+
+<main id="main" class="wrap narrow guide">
+  <aside class="signup-box top" aria-labelledby="sb-top-h">
+    <p class="sb-h" id="sb-top-h"><strong>Get the free starter guide + one practical AI task every Monday.</strong></p>
+    <p class="sb-p">Free, plain English, five minutes a week. Unsubscribe any time.</p>
+    <div class="sb-cta"><a class="btn primary" href="https://aistarthere-newsletter.beehiiv.com/" target="_blank" rel="noopener">Subscribe free</a></div>
+  </aside>
+
+  <p class="eyebrow"><a href="/">Home</a> › <a href="/#guides">Guides</a> › Receipts to an expenses sheet</p>
+  <h1>How to turn receipt photos into an expenses sheet with AI</h1>
+  <p class="lede">A pile of paper receipts is a chore to type up. A free AI chatbot can read a photo and pull out the date, the shop and the total, so you can paste the rows into a simple Google Sheet. You still check every number against the receipt. This was the idea readers voted to the top of our <a href="/#automations">free automations list</a>.</p>
+
+  <section class="step">
+    <h2>What you need</h2>
+    <ul>
+      <li>A few receipts. Paper ones are fine: take a clear, well-lit photo, laid flat, with the shop name, date and total in shot. If you were emailed a PDF receipt, you can use that instead of a photo.</li>
+      <li>One free chatbot that can look at photos. <strong>ChatGPT</strong> has a free version available to everyone (<a href="https://chatgpt.com/pricing" target="_blank" rel="noopener">OpenAI's plans page</a>). Image uploads are available on the Free plan, subject to plan limits (<a href="https://help.openai.com/en/articles/8400551-chatgpt-image-inputs-faq" target="_blank" rel="noopener">ChatGPT Image Inputs FAQ</a>). OpenAI's upload help says Free users are limited to 3 file uploads per day, that still images should be PNG, JPEG or non-animated GIF, and that each image can be up to 20 MB (<a href="https://help.openai.com/en/articles/8555545-uploading-files-and-audio-to-chatgpt" target="_blank" rel="noopener">Uploading files and audio to ChatGPT</a>). <strong>Gemini</strong> has a free plan with a Google Account (<a href="https://gemini.google/subscriptions/" target="_blank" rel="noopener">Google's plans page</a>). You can upload photos and other files; Google's help says you can add up to 10 files in the same prompt (subject to availability), and that non-video files can be up to 100 MB. Google also applies rolling limits for chats with files, which reset after a period of time (<a href="https://support.google.com/gemini/answer/14903178?hl=en" target="_blank" rel="noopener">Upload and analyze files in Gemini Apps</a>). Usage limits for accounts without a paid Google AI plan are listed as "Standard limits", and Google says your limit refreshes every 5 hours until you reach a weekly limit (<a href="https://support.google.com/gemini/answer/16275805?hl=en" target="_blank" rel="noopener">Gemini Apps limits and feature availability</a>).</li>
+      <li>A Google Account and <strong>Google Sheets</strong>. Open the Sheets home screen at <a href="https://sheets.google.com" target="_blank" rel="noopener">sheets.google.com</a> and click New to create a spreadsheet (<a href="https://support.google.com/docs/answer/6000292" target="_blank" rel="noopener">How to use Google Sheets</a>). Google's plans page lists 15 GB of cloud storage across Gmail, Drive and Photos on the free plan with a Google Account (<a href="https://gemini.google/subscriptions/" target="_blank" rel="noopener">Google's plans page</a>).</li>
+      <li>About 15 minutes, including a check of every total against the receipt.</li>
+    </ul>
+    <p>If you have more than three receipts and you're on ChatGPT's Free plan, do a few today and the rest tomorrow, or use Gemini, which allows up to 10 files in one prompt (subject to availability).</p>
+  </section>
+
+  <section class="step">
+    <h2>Before you upload: a 10-second privacy check</h2>
+    <p>Whatever you upload goes to the company that runs the chatbot. Receipts often show more than the total: a card number, a signature, an address or a loyalty number. Look at each photo first and ask: would I be happy for a stranger at that company to see this? If not, don't upload it, or cover or crop those parts first.</p>
+    <ul>
+      <li><strong>Cover or crop:</strong> full or partial card numbers, signatures, PIN reminders, PPS or other ID numbers, home addresses, and other people's private information.</li>
+      <li><strong>Work expenses?</strong> Check your employer's rules before uploading work receipts into a personal AI account. Many workplaces don't allow it.</li>
+      <li><strong>Keep the bits the chatbot needs:</strong> the shop name, the date and the total should stay visible and in focus.</li>
+    </ul>
+    <p>What each company says:</p>
+    <ul>
+      <li><strong>Google</strong> asks you not to enter confidential information you wouldn't want a human reviewer to see or Google to use to improve its services (<a href="https://support.google.com/gemini/answer/13594961?hl=en" target="_blank" rel="noopener">Gemini Apps Privacy Hub</a>).</li>
+      <li><strong>OpenAI</strong> says that on ChatGPT Free, Plus or Pro, sharing your chats to improve its models is on by default. You can switch off "Improve the model for everyone" in Settings → Data controls, or use a Temporary chat, which isn't used to improve its models but may be kept for up to 30 days for safety (<a href="https://help.openai.com/en/articles/7730893-data-controls-faq" target="_blank" rel="noopener">Data controls in ChatGPT</a>).</li>
+    </ul>
+  </section>
+
+  <section class="step">
+    <h2>The prompt (copy this)</h2>
+    <p>This asks for a simple table you can paste into a spreadsheet, and tells the chatbot not to guess when it can't read a field.</p>
+    <pre class="prompt">Extract the details from each receipt I've uploaded. For each receipt, give me: date (YYYY-MM-DD if you can read it), shop or merchant name, total amount, currency, and a simple category (for example Groceries, Travel, Household, Eating out, or Other). If you can't read a field clearly, write UNCLEAR rather than guessing.
+
+Output only a CSV with this header row, and one data row per receipt:
+Date,Shop,Total,Currency,Category
+
+Do not add commentary before or after the CSV. Keep each total as a number (for example 12.40), and use EUR if the receipt is in euro.</pre>
+  </section>
+
+  <section class="step">
+    <h2>Steps: ChatGPT or Gemini</h2>
+    <ol class="steps">
+      <li><strong>Open the chatbot</strong> in your browser: chatgpt.com or gemini.google.com. Sign in if it asks.</li>
+      <li><strong>Start a new chat</strong>, so older chats don't mix in.</li>
+      <li><strong>Add the receipts.</strong> In ChatGPT, tap the + icon in the prompt area and select Add photos &amp; files (you can also drag a file in, or paste an image from your clipboard) (<a href="https://help.openai.com/en/articles/8400551-chatgpt-image-inputs-faq" target="_blank" rel="noopener">ChatGPT Image Inputs FAQ</a>). In Gemini, click Add files, then Upload Files (on a phone you can also choose Photos or Camera) (<a href="https://support.google.com/gemini/answer/14903178?hl=en" target="_blank" rel="noopener">Upload and analyze files in Gemini Apps</a>). Add each receipt you want in this batch.</li>
+      <li><strong>Paste the prompt above</strong> into the message box, then send it.</li>
+      <li><strong>Read the CSV</strong> and check it against the receipts before you copy anything (see the checks below).</li>
+      <li><strong>Follow up in the same chat</strong> if something is off. You can paste one of these as a reply:
+        <ul>
+          <li>"The total on the second receipt is wrong. Look again and only output the corrected CSV."</li>
+          <li>"The date is printed as 08/11/2026, which is 8 November. Use YYYY-MM-DD."</li>
+          <li>"Put both coffee receipts in Eating out, not Other."</li>
+        </ul>
+      </li>
+    </ol>
+    <p class="fine">Emailed a PDF instead of a paper receipt? OpenAI says ChatGPT can analyze text and images in PDFs: select + in the prompt area, then Add photos &amp; files, and ask about the contents (<a href="https://help.openai.com/en/articles/8555545-uploading-files-and-audio-to-chatgpt" target="_blank" rel="noopener">Uploading files and audio to ChatGPT</a>). Those uploads still count towards the Free plan's 3 file uploads a day. Gemini's help says it supports most file types, with the same per-prompt and size limits as above.</p>
+  </section>
+
+  <section class="step">
+    <h2>A worked example</h2>
+    <p>This is a made-up pair of receipts, written to show the shape of a useful result. It is not a copy of a chatbot's actual reply, and it is not from a real shop.</p>
+    <p>Imagine you photographed two short receipts. One is from a café on 8 November 2026, total €12.40. The other is from a hardware shop on 10 November 2026, total €18.95. A clean CSV might look like this:</p>
+    <pre>Date,Shop,Total,Currency,Category
+2026-11-08,The Corner Café,12.40,EUR,Eating out
+2026-11-10,Green Street Hardware,18.95,EUR,Household</pre>
+    <p>Notice what matters: one row per receipt, a header you can paste, totals as numbers, and the currency written separately so a euro amount isn't confused with pounds or dollars. If the chatbot had been unsure of a date or a total, that field would say UNCLEAR and you would type the real value from the receipt.</p>
+  </section>
+
+  <section class="step">
+    <h2>Check every number before you paste it</h2>
+    <p>AI can misread a photo. OpenAI's image-inputs help says the model may generate incorrect descriptions, and that it may misinterpret rotated or upside-down text. It also suggests enlarging text to improve readability, without cropping important details. Treat the CSV as a draft, not the final record.</p>
+    <ul>
+      <li><strong>The total.</strong> Check it against the "Total", "Amount due" or "Visa/Mastercard" line on the receipt, not a subtotal or a mid-page figure.</li>
+      <li><strong>The date and the shop name.</strong> Confirm both. A faded date or a logo-only header is easy to get wrong.</li>
+      <li><strong>The currency.</strong> Make sure euro receipts stay in euro.</li>
+      <li><strong>Anything marked UNCLEAR.</strong> Type it yourself from the receipt. Don't let the chatbot guess a second time and assume it's right.</li>
+      <li><strong>This is not tax or accounts advice.</strong> If you need VAT, invoice numbers or a formal expenses claim, read those lines on the original receipt yourself. Use the sheet as a simple log, not as a substitute for your records.</li>
+    </ul>
+  </section>
+
+  <section class="step">
+    <h2>Put the rows in Google Sheets</h2>
+    <ol class="steps">
+      <li><strong>Create the spreadsheet.</strong> Open <a href="https://sheets.google.com" target="_blank" rel="noopener">sheets.google.com</a> and click New (<a href="https://support.google.com/docs/answer/6000292" target="_blank" rel="noopener">How to use Google Sheets</a>). You can also go to sheets.google.com/create. Give it a name, such as "Expenses 2026".</li>
+      <li><strong>Paste the CSV.</strong> Click cell A1, then paste. If the columns don't split on their own, select the pasted cells, click Data, then Split text to columns. You can change the separator if needed; after a paste, Sheets may also offer "Paste, Split text to columns" (<a href="https://support.google.com/docs/answer/6325535?hl=en" target="_blank" rel="noopener">Split text, remove duplicates, or trim whitespace</a>). If a total looks wrong after the split, check whether the chatbot used a comma or a full stop in the amount, and that the separator was set to comma.</li>
+      <li><strong>Format the totals.</strong> Select the Total column (column C if you used the header above). Click Format, then Number, and choose Currency. If you want a specific euro format, the same menu has Custom currency, where you can search for a format (<a href="https://support.google.com/docs/answer/56470" target="_blank" rel="noopener">Format numbers in a spreadsheet</a>).</li>
+      <li><strong>Add a total at the bottom.</strong> In the first empty cell under your amounts, type a SUM formula and adjust the range to cover your rows, for example <code>=SUM(C2:C10)</code>. Google's help for SUM shows this kind of range, such as <code>SUM(A2:A100)</code> (<a href="https://support.google.com/docs/answer/3093669?hl=en" target="_blank" rel="noopener">SUM</a>).</li>
+      <li><strong>Add more receipts later</strong> by starting a new chat (or continuing, if the daily upload limit allows), checking the new rows, and pasting them under the last receipt. Keep the SUM range wide enough to include the new rows.</li>
+    </ol>
+  </section>
+
+  <section class="step tips">
+    <h2>Make it even more useful</h2>
+    <ul>
+      <li><strong>Add a column</strong> for "Paid with" or "Notes" if you want to remember whether something was a card, cash or a work expense.</li>
+      <li><strong>Ask for category totals</strong> once you have a few rows: paste the table back into the same chat and say "Give me a total for each Category. Quote the figures from the table." Then check the sums in the sheet.</li>
+      <li><strong>Better photos get better reads.</strong> Lay the receipt flat, avoid shadows and glare, and don't photograph it upside down.</li>
+      <li><strong>Need to query a charge or chase a refund?</strong> See <a href="/write-difficult-email-with-ai/">How to write a difficult email with AI</a>.</li>
+    </ul>
+  </section>
+
+  <!-- build:related -->
+  <nav class="related" aria-labelledby="related-h">
+    <h2 id="related-h">Related guides</h2>
+    <ul><li><a href="/starter-guide/">Your first 5 things to try with AI</a></li><li><a href="/summarise-email-with-ai/">How to summarise a long email with AI</a></li><li><a href="/write-difficult-email-with-ai/">How to write a difficult email with AI</a></li><li><a href="/#guides">All guides</a> · <a href="/#basics">AI basics for beginners</a></li></ul>
+  </nav>
+  <!-- /build:related -->
+
+  <aside class="signup-box bottom" id="subscribe" aria-labelledby="sb-bot-h">
+    <h2 id="sb-bot-h">Liked this? Get one practical AI task every Monday.</h2>
+    <p class="sb-p">The AI Start Here email: one thing to try, what changed this week, free tools only. Plain English, sources linked, unsubscribe any time.</p>
+    <div class="nl-embed"><a class="btn primary" href="https://aistarthere-newsletter.beehiiv.com/" target="_blank" rel="noopener">Subscribe free</a></div>
+  </aside>
+
+  <p class="fine guide-foot">AI Start Here · aistarthere.github.io · Updated 13 Nov 2026 · Vendor details checked on each company's own page on 13 Nov 2026. Researched and written with AI assistance. Not affiliated with any AI company. Plans and settings change, so check the tool's own page.</p>
+</main>
+<script src="/config.js"></script>
+<script src="/guide.js"></script>
+</body>
+</html>
