@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-26",
+  "updated": "2026-11-13",
   "note": "Every idea uses free tiers only. Free-plan limits are linked so you can check them before you build.",
   "items": [
     {
@@ -67,7 +67,7 @@
       ],
       "steps": [
         "Pick 3 to 5 sites you trust that have an RSS feed.",
-        "In Make, create a scenario: an RSS 'watch feed items' module, then Google Sheets 'Add a row' (title, link, date). TODO: confirm the module names in Make's editor.",
+        "In Make, create a scenario: an RSS 'Watch RSS Feed Items' module, then a Google Sheets 'Add a Row' module (map title, link and date). Those are the module names in Make's help for RSS and Google Sheets.",
         "Schedule it to run once a day. Make's free plan gives 1,000 credits a month, and most actions use 1 credit.",
         "On Fridays, paste the week's rows into a chatbot: 'Group these into themes and write a 5-bullet digest with the links.'"
       ],

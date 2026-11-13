@@ -86,7 +86,7 @@ def r_models():
           <tbody id="models-body">{"".join(rows)}</tbody>
         </table>
       </div>
-      <p class="fineprint">Rows only use each lab's own announcement or pricing page. "TODO" means we couldn't confirm it there yet.</p>'''
+      <p class="fineprint">Rows only use each lab's own announcement or pricing page. If a date or access detail is not on that page, we say so rather than guess.</p>'''
 
 def r_news():
     items = "".join(f'<li><time datetime="{e(n["date"])}">{e(fmt(n["date"]))}</time><h3>{e(n["title"])}</h3><p>{todo(n["summary"])} {ext(n["source"], "Source: " + e(host(n["source"])))}</p><p class="why"><strong>Why it matters:</strong> {e(n["whyItMatters"])}</p></li>' for n in news["items"])
@@ -211,7 +211,7 @@ def render_index(src):
 # ---------- Markdown / text files ----------
 def md_page():
     L = [f"# {SITE['siteName']}", "", f"> {SITE['description']}", "",
-         "Content is researched with AI assistance and every fact links to the lab's or vendor's own page. \"TODO\" means we could not confirm a detail on that page yet.",
+         "Content is researched with AI assistance and every fact links to the lab's or vendor's own page. If a date or access detail is not on that page, we say so rather than guess.",
          f"Canonical page: {BASE}", "", "## AI 101: what do I need to know first?", "", f"_Last updated: {basics['updated']}_", ""]
     for c in FAQ:
         L += [f"### {c['title']}", "", f"**{c['answer']}** {c['body']}"]
@@ -243,7 +243,7 @@ def llms_txt():
         f"# {SITE['siteName']}", "",
         f"> {SITE['description']} Written for busy adults (Ireland/EU first) who are new to AI. Free tools only.", "",
         "- Every model row and news item cites the AI lab's or vendor's own page; follow those links before quoting a detail.",
-        "- \"TODO\" in the data means the detail was not on the lab's page when checked; do not fill it in by guessing.",
+        "- If a date or access detail was not on the lab's page when checked, the row says so; do not fill it in by guessing.",
         "- Content is researched with AI assistance and is not affiliated with any AI company.",
         f"- Last updated {LAST_MOD}. Newest models listed: {newest}.", "",
         "## Main page", "",

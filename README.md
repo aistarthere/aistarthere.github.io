@@ -13,7 +13,7 @@ Content lives in `data/*.json`. `build.py` pre-renders it into `index.html` (so 
 - `site.json`: base URL, title, description, X handle (empty until @aistarthere exists)
 - `config.js`: service placeholders (Tally, vote CSV, beehiiv, GoatCounter). Empty = "coming soon". Rebuild after editing.
 - `data/basics.json`: AI 101 questions (`title`, short `answer`, `body`, `sources`). Also feeds the FAQPage JSON-LD.
-- `data/models.json`: Latest models table + ItemList JSON-LD. `source` must be the lab's own page; unknown fields say `TODO`.
+- `data/models.json`: Latest models table + ItemList JSON-LD. `source` must be the lab's own page; if a date is not on that page, write `Date not published` rather than guessing.
 - `data/news.json`, `data/try.json`, `data/automations.json` (`id` is the vote key; don't rename it once voting is live)
 - In `index.html`, only edit outside the `<!-- build:NAME -->` markers.
 - `qa/`: helpers for `qa.sh`. Node QA tools install to `../tools/qa-node`; reports go to `../qa-reports/`.
