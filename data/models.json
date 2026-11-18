@@ -1,7 +1,57 @@
 {
-  "updated": "2026-11-13",
+  "updated": "2026-11-18",
   "howToUpdate": "Add a row when a lab publishes a release post. Only use the lab's own page as the source. If a date is not on that page, write 'Date not published'. If an access detail is not on that page, say what the page does and does not state. Do not guess.",
   "models": [
+    {
+      "company": "OpenAI",
+      "model": "GPT-6.2 Astra",
+      "released": "2026-11-17",
+      "goodFor": "OpenAI's new top model for the hardest projects; better slides, spreadsheets, documents and code",
+      "free": "No (Plus, Pro, Enterprise and Edu in ChatGPT Work and Codex; API is paid at $8/$40 per million input/output tokens)",
+      "source": "https://openai.com/index/introducing-gpt-6-2-astra-sol/",
+      "releasedSource": "https://openai.com/news/"
+    },
+    {
+      "company": "OpenAI",
+      "model": "GPT-6.2 Sol",
+      "released": "2026-11-17",
+      "goodFor": "Everyday work, writing and multi-step tasks; OpenAI says smarter and more efficient than GPT-6.1 Sol",
+      "free": "No (Plus, Pro, Enterprise and Edu in ChatGPT Work and Codex; API is paid at $2/$10 per million input/output tokens)",
+      "source": "https://openai.com/index/introducing-gpt-6-2-astra-sol/",
+      "releasedSource": "https://openai.com/news/"
+    },
+    {
+      "company": "Microsoft",
+      "model": "MAI Code 2",
+      "released": "2026-11-17",
+      "goodFor": "Everyday coding: debugging, multi-file changes, dashboards and visual front-end work (not yet tuned for very long or research tasks)",
+      "free": "No free access stated. Available in GitHub Copilot (the page does not say which plans or list prices)",
+      "source": "https://microsoft.ai/news/introducing-mai-code-2-and-mai-code-2-flash/"
+    },
+    {
+      "company": "Microsoft",
+      "model": "MAI Code 2 Flash",
+      "released": "2026-11-17",
+      "goodFor": "High-volume coding help: code explanations, small edits and routine fixes at lower cost",
+      "free": "No free access stated. Available in GitHub Copilot and in limited-access preview in Microsoft Foundry (prices not listed)",
+      "source": "https://microsoft.ai/news/introducing-mai-code-2-and-mai-code-2-flash/"
+    },
+    {
+      "company": "Alibaba (Qwen)",
+      "model": "Qwen4-Max",
+      "released": "2026-11-16",
+      "goodFor": "Coding, agent tasks and visual reasoning for work, creative and research projects",
+      "free": "No free access stated. On QwenCloud (Token Plan and API), QwenWork and QwenStudio. The page says smaller open-weight Qwen4 models are coming soon",
+      "source": "https://www.alibabacloud.com/en/press-room/alibaba-unveils-qwen4-max"
+    },
+    {
+      "company": "Tencent",
+      "model": "Hy4 flash",
+      "released": "2026-11-16",
+      "goodFor": "Low-cost everyday work: research, documents, slide decks, simple web pages and computer use",
+      "free": "Yes, free on WorkBuddy until 30 Nov 2026; also in Yuanbao, WeCom, QQ, ima and Marvis. API on Tencent Cloud TokenHub about $0.07/$0.28 per million input/output tokens (50% off until 30 Nov)",
+      "source": "https://www.tencent.com/tencent-launches-hy4-flash-to-power-high-speed-cost-efficient-ai-deployment-for-everyday-workflows/"
+    },
     {
       "company": "Google",
       "model": "Gemini 4 Hydrogen",
@@ -40,7 +90,7 @@
       "company": "OpenAI",
       "model": "GPT-6.1 Sol",
       "released": "2026-09-29",
-      "goodFor": "Coding, PDFs/documents and multi-step business tasks; OpenAI says near GPT-6 Astra quality at a fifth of Astra's price",
+      "goodFor": "Previous Sol release for coding, PDFs/documents and multi-step business tasks (superseded by GPT-6.2 Sol)",
       "free": "No (Plus and above in ChatGPT; API is paid)",
       "source": "https://openai.com/index/introducing-gpt-6-1-sol/",
       "source2": "https://chatgpt.com/pricing"
@@ -57,7 +107,7 @@
       "company": "OpenAI",
       "model": "GPT-6 Astra",
       "released": "2026-09-03",
-      "goodFor": "OpenAI's top model for the hardest work",
+      "goodFor": "Previous top OpenAI model for the hardest work (superseded by GPT-6.2 Astra)",
       "free": "No (ChatGPT Plus, Pro, Business and Enterprise; not on the Free plan)",
       "source": "https://openai.com/index/gpt-6-astra/",
       "source2": "https://openai.com/index/safety-overview-gpt-6-astra/"
