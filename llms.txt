@@ -5,7 +5,7 @@
 - Every model row and news item cites the AI lab's or vendor's own page; follow those links before quoting a detail.
 - If a date or access detail was not on the lab's page when checked, the row says so; do not fill it in by guessing.
 - Content is researched with AI assistance and is not affiliated with any AI company.
-- Last updated 2026-11-13. Newest models listed: Gemini 4 Hydrogen (Google, 2026-11-12), Gemini 4 Carbon (Google, 2026-11-10), Claude Fable 5.2 (Anthropic, 2026-11-09).
+- Last updated 2026-11-18. Newest models listed: GPT-6.2 Astra (OpenAI, 2026-11-17), GPT-6.2 Sol (OpenAI, 2026-11-17), MAI Code 2 (Microsoft, 2026-11-17).
 
 ## Main page
 

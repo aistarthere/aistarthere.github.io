@@ -51,10 +51,16 @@ Go deeper (free): [Elements of AI: free online course for non-experts (Universit
 
 ## What are the latest AI models?
 
-_Last checked: 2026-11-13_
+_Last checked: 2026-11-18_
 
 | Company | Model | Released | Good for | Free access? | Sources |
 |---|---|---|---|---|---|
+| OpenAI | GPT-6.2 Astra | 2026-11-17 | OpenAI's new top model for the hardest projects; better slides, spreadsheets, documents and code | No (Plus, Pro, Enterprise and Edu in ChatGPT Work and Codex; API is paid at $8/$40 per million input/output tokens) | [openai.com](https://openai.com/index/introducing-gpt-6-2-astra-sol/) |
+| OpenAI | GPT-6.2 Sol | 2026-11-17 | Everyday work, writing and multi-step tasks; OpenAI says smarter and more efficient than GPT-6.1 Sol | No (Plus, Pro, Enterprise and Edu in ChatGPT Work and Codex; API is paid at $2/$10 per million input/output tokens) | [openai.com](https://openai.com/index/introducing-gpt-6-2-astra-sol/) |
+| Microsoft | MAI Code 2 | 2026-11-17 | Everyday coding: debugging, multi-file changes, dashboards and visual front-end work (not yet tuned for very long or research tasks) | No free access stated. Available in GitHub Copilot (the page does not say which plans or list prices) | [microsoft.ai](https://microsoft.ai/news/introducing-mai-code-2-and-mai-code-2-flash/) |
+| Microsoft | MAI Code 2 Flash | 2026-11-17 | High-volume coding help: code explanations, small edits and routine fixes at lower cost | No free access stated. Available in GitHub Copilot and in limited-access preview in Microsoft Foundry (prices not listed) | [microsoft.ai](https://microsoft.ai/news/introducing-mai-code-2-and-mai-code-2-flash/) |
+| Alibaba (Qwen) | Qwen4-Max | 2026-11-16 | Coding, agent tasks and visual reasoning for work, creative and research projects | No free access stated. On QwenCloud (Token Plan and API), QwenWork and QwenStudio. The page says smaller open-weight Qwen4 models are coming soon | [alibabacloud.com](https://www.alibabacloud.com/en/press-room/alibaba-unveils-qwen4-max) |
+| Tencent | Hy4 flash | 2026-11-16 | Low-cost everyday work: research, documents, slide decks, simple web pages and computer use | Yes, free on WorkBuddy until 30 Nov 2026; also in Yuanbao, WeCom, QQ, ima and Marvis. API on Tencent Cloud TokenHub about $0.07/$0.28 per million input/output tokens (50% off until 30 Nov) | [tencent.com](https://www.tencent.com/tencent-launches-hy4-flash-to-power-high-speed-cost-efficient-ai-deployment-for-everyday-workflows/) |
 | Google | Gemini 4 Hydrogen | 2026-11-12 | Fast everyday coding and agent-style tasks; also used in Google Search | Yes, in the Gemini app (auto-selected for free users when it fits) and in Google Search for all users | [blog.google](https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-hydrogen/) |
 | Google | Gemini 4 Carbon | 2026-11-10 | Google's strongest model for hard coding, long research and cybersecurity work | No. Paid Gemini API, and Google AI Ultra subscribers in the Gemini app, AI Mode in Search, and Antigravity | [blog.google](https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-carbon-now-available/) |
 | Anthropic | Claude Fable 5.2 | 2026-11-09 | The hardest technical work: long coding jobs, science, maths and research | No (not on Claude's Free plan; Pro via usage credits; Max and Ultra include some Fable use) | [anthropic.com](https://www.anthropic.com/claude-fable-and-mythos-5-2) [claude.com](https://claude.com/pricing) |
@@ -65,55 +71,39 @@ _Last checked: 2026-11-13_
 | Meta | Muse Wonder | 2026-10-12 | Agent-style tasks, e.g. insurance claims, leases, building an app | API and Muse Code now; Muse consumer rollout first to subscribers (12 Oct post). A 6 Nov post rolled Wonder-trained specialised models to Muse and Meta AI users | [about.fb.com](https://about.fb.com/news/2026/10/introducing-muse-wonder-models/) |
 | Anthropic | Claude Haiku 5.5 | 2026-10-07 | Fast, cheap summaries, sorting and high-volume tasks | Haiku is on Claude's Free plan, with limits (version not named) | [anthropic.com](https://www.anthropic.com/claude-haiku-5-5) [claude.com](https://claude.com/pricing) |
 | Google | Gemini 4 Argon | 2026-09-30 | Complex software engineering, legal/finance work, cyber defence | No. Paid Gemini API, and Google AI Pro/Ultra in the Gemini app and AI Mode in Search (Ultra also in Antigravity); not on the free tier | [blog.google](https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-argon/) [blog.google](https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-argon/) |
-| OpenAI | GPT-6.1 Sol | 2026-09-29 | Coding, PDFs/documents and multi-step business tasks; OpenAI says near GPT-6 Astra quality at a fifth of Astra's price | No (Plus and above in ChatGPT; API is paid) | [openai.com](https://openai.com/index/introducing-gpt-6-1-sol/) [chatgpt.com](https://chatgpt.com/pricing) |
+| OpenAI | GPT-6.1 Sol | 2026-09-29 | Previous Sol release for coding, PDFs/documents and multi-step business tasks (superseded by GPT-6.2 Sol) | No (Plus and above in ChatGPT; API is paid) | [openai.com](https://openai.com/index/introducing-gpt-6-1-sol/) [chatgpt.com](https://chatgpt.com/pricing) |
 | Anthropic | Claude Sonnet 5.5 | 2026-09-28 | Everyday tasks, fixing bugs, polished documents, slides and spreadsheets | Sonnet is on Claude's Free plan, with limits (pricing page does not name the version) | [anthropic.com](https://www.anthropic.com/claude-sonnet-5-5) [claude.com](https://claude.com/pricing) |
 | OpenAI | GPT-6 Luna | 2026-09-22 | Fast, low-cost everyday work | Yes, in the ChatGPT desktop app for Free and Go users (per launch post) | [openai.com](https://openai.com/index/introducing-gpt-6-sol-and-luna/) |
 | Anthropic | Claude Opus 5.5 | 2026-09-22 | Long, complex coding and knowledge work | No (Opus is not on the Free plan) | [anthropic.com](https://www.anthropic.com/claude-opus-5-5) [claude.com](https://claude.com/pricing) |
 | xAI | Grok 4.7 | 2026-09-21 | Coding and knowledge work | No free consumer access listed. The announcement names Cursor, Grok Build, the Grok API (from $2/$6 per million tokens), third-party coding harnesses, and model routers and cloud platforms | [x.ai](https://x.ai/news/grok-4-7) |
 | Anthropic | Claude Fable 5.1 | 2026-09-15 | Previous Fable release for long-running coding, knowledge work and research (superseded by Fable 5.2) | No (not on Claude's Free plan; Pro via usage credits) | [anthropic.com](https://www.anthropic.com/claude-fable-and-mythos-5-1) [claude.com](https://claude.com/pricing) |
-| OpenAI | GPT-6 Astra | 2026-09-03 | OpenAI's top model for the hardest work | No (ChatGPT Plus, Pro, Business and Enterprise; not on the Free plan) | [openai.com](https://openai.com/index/gpt-6-astra/) [openai.com](https://openai.com/index/safety-overview-gpt-6-astra/) |
+| OpenAI | GPT-6 Astra | 2026-09-03 | Previous top OpenAI model for the hardest work (superseded by GPT-6.2 Astra) | No (ChatGPT Plus, Pro, Business and Enterprise; not on the Free plan) | [openai.com](https://openai.com/index/gpt-6-astra/) [openai.com](https://openai.com/index/safety-overview-gpt-6-astra/) |
 | Google | Gemini 3.8 Flash | 2026-09-02 | Low-cost reasoning and coding 'workhorse' | No free consumer access listed. In the Gemini app, AI Mode in Google Search and Gemini in Google Sheets it is for Google AI Pro and Ultra subscribers. Developers can use it in the Gemini API (introductory price $0.75/$3.75 per million input/output tokens) via Google AI Studio, Android Studio and Antigravity | [blog.google](https://blog.google/innovation-and-ai/models-and-research/gemini-models/3-8-flash-and-3-8-flash-cyber/) |
 | DeepSeek | DeepSeek-V4.1-Flash-1017 | Date not published | Building whole projects with code; cheaper, shorter answers than the previous version | Open weights on Hugging Face; live on DeepSeek website and app (price not stated) | [api-docs.deepseek.com](https://api-docs.deepseek.com/news/news261017/) |
 
 ## What's new in AI this week?
 
-_Last updated: 2026-11-13_
+_Last updated: 2026-11-18_
 
-### Google's Gemini 4 Hydrogen is in the Gemini app and Search for everyone (2026-11-12)
+### OpenAI releases GPT-6.2 Astra and GPT-6.2 Sol (2026-11-17)
 
-Google launched Gemini 4 Hydrogen, a faster Gemini 4 model for everyday work, coding and short agent tasks. It is rolling out in the Gemini app and Google Search for all users; in the Gemini app, free users get it through automatic model selection when it is the right fit. Why it matters: You may already be getting answers from a newer Google model in Search or the Gemini app, without changing any settings. [Source](https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-hydrogen/)
+OpenAI released two new models: GPT-6.2 Astra for your hardest projects and GPT-6.2 Sol for everyday work. OpenAI says both get better results while using fewer output tokens, so you can get more done within your usage limits, and that Astra's slides, spreadsheets and documents follow your templates more closely. They are available to Plus, Pro, Enterprise and Edu users in ChatGPT Work and Codex, and to developers through the API. Why it matters: If you pay for ChatGPT, the models behind longer work tasks just got an upgrade. The launch post does not list the Free plan. [Source](https://openai.com/index/introducing-gpt-6-2-astra-sol/)
 
-### Gemini 4 Carbon is now available to paying users (2026-11-10)
+### Google makes Tasks in Gemini free in six countries (2026-11-17)
 
-Google made Gemini 4 Carbon, its strongest Gemini 4 model, available to paying developers through the Gemini API and to Google AI Ultra subscribers in the Gemini app, AI Mode in Search, and Google Antigravity. It uses the same introductory API price as Gemini 4 Argon. Why it matters: Google's most capable model is no longer limited to a small test group, if you pay for Ultra or the API. [Source](https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-carbon-now-available/)
+Google is rolling out Tasks in Gemini free of charge to hundreds of millions of people in the US, Japan, Korea, Canada, Australia and India, running on Gemini 4 Hydrogen. You flip the home-screen toggle from Chat to Task and Gemini works on the job in the background, for example calling businesses, adding dates to your calendar or comparing products. Google says it is designed to check with you before critical steps like buying, and that it can still make mistakes. Why it matters: It is a free way to hand an AI a real errand rather than just a question. Ireland and the rest of Europe are not in the first countries listed. [Source](https://blog.google/innovation-and-ai/products/gemini-app/tasks-in-gemini-free-new-features/)
 
-### Businesses can now claim a profile in ChatGPT (2026-11-10)
+### Microsoft makes Copilot Home and Office in Copilot generally available (2026-11-17)
 
-OpenAI launched Businesses in ChatGPT in beta. Eligible businesses where ChatGPT is available can claim a profile in Business Hub, keep details and product feeds up to date, and see aggregated mention and click numbers. Eligible US ecommerce and online-service businesses can also add a clearly labelled Business Agent. Why it matters: If you run a small shop, you can start putting accurate information about it into ChatGPT; if you are comparing products, some follow-up chats may be with a business's own agent, which OpenAI says is labelled separately. [Source](https://openai.com/index/introducing-businesses-chatgpt)
+At Ignite 2026, Microsoft said Home, where Copilot Chat and Cowork come together, and Office in Copilot, which brings Word, Excel and PowerPoint into the Copilot app, are now generally available. Copilot Code, which builds simple apps and dashboards from a plain-words description, follows in the coming weeks, and the Autopilot agent is starting to roll out to Frontier customers. Why it matters: If your workplace uses Microsoft Copilot, you get one starting screen where you can ask a quick question or hand off a whole task. [Source](https://www.microsoft.com/en-us/copilot/blog/2026/11/17/copilot-at-microsoft-ignite-expanding-whats-possible-with-intelligence-built-for-work/)
 
-### Anthropic launches Claude Fable 5.2 and Mythos 5.2 (2026-11-09)
+### Meta's Muse personal agent launches in Australia (2026-11-17)
 
-Anthropic released Claude Fable 5.2, an upgrade of its model for the hardest technical work, and Claude Mythos 5.2, the same underlying model for vetted cybersecurity and life-sciences organisations. Fable 5.2 is available on Anthropic's platforms; it is not on the Free plan (Pro can use it with usage credits; Max and Ultra include some Fable use). Why it matters: If you already pay for Claude, a stronger top model is now available for the toughest jobs. [Source](https://www.anthropic.com/claude-fable-and-mythos-5-2)
+Meta made Muse, its personal AI agent, available in Australia on iOS, Android, muse.ai and a Mac app. It can connect to services such as Gmail, Google Calendar and OpenTable, with local partners like Canva and Officeworks rolling out over time. Meta says Muse is free for most of what people need and checks with you before sensitive actions such as sending an email or making a purchase. Why it matters: Agents that do tasks for you, not just answer, are reaching more countries. Asking before sending or buying is a safeguard worth looking for in any agent you try. [Source](https://about.fb.com/news/2026/11/muse-is-now-available-in-australia/)
 
-### Meta brings Wonder-style memory to Muse and Meta AI (2026-11-06)
+### Apple explains daily limits for Siri AI and Apple Intelligence (2026-11-16)
 
-Meta says it has rolled out specialised versions of its existing models, trained with Muse Wonder, to people who use the Muse app and Meta AI. The update is meant to remember important details better and keep going when a task hits a snag. Why it matters: If you already use Meta AI or Muse, the assistant may now hold onto context and finish everyday tasks more reliably. [Source](https://research.meta.ai/blog/specialized-models-for-muse-and-metaai)
-
-### Anthropic hands its 'Agent Skills' standard to the Agentic AI Foundation (2026-10-22)
-
-Anthropic is donating Agent Skills, an open standard for teaching AI agents specific tasks, to the Agentic AI Foundation under the Linux Foundation. It says more than 70 agent platforms, including ChatGPT, Cursor, GitHub Copilot and VS Code, have adopted it since December 2025. Why it matters: Skills you set up in one AI tool are more likely to work in others. [Source](https://www.anthropic.com/news/donating-agent-skills-to-the-agentic-ai-foundation)
-
-### OpenAI models are coming to Google Cloud (2026-10-21)
-
-OpenAI says its frontier models and Codex are coming to Google Cloud's Model Garden, bought through Google Cloud Marketplace. General availability is planned 'in the coming weeks'; Microsoft remains OpenAI's primary cloud partner. Why it matters: Rival clouds are carrying each other's models, so businesses get more choice. [Source](https://openai.com/index/openai-models-google-cloud)
-
-### Meta releases the weights of Muse Spark Open (2026-10-15)
-
-Meta calls it the most capable US open-weight model to date: 816B parameters (42B active), with a 1M-token context window. Why it matters: Anyone with the hardware can download and run it, rather than renting it through an app. [Source](https://research.meta.ai/blog/muse-spark-open)
-
-### Anthropic launches Claude Haiku 5.5 and cuts a Sonnet price (2026-10-07)
-
-Anthropic says Haiku 5.5 costs around 75% less to run than Haiku 4.5. Sonnet 5.5 cache reads were also halved. Why it matters: Small, cheap models keep getting better, so AI features get cheaper to build. [Source](https://www.anthropic.com/claude-haiku-5-5)
+Apple published a support page saying some Siri AI and Apple Intelligence features that rely on server models have a daily limit on each device. Everyday Siri requests like setting a timer still work after you hit it; more complex requests pause until the limit resets, around midnight, or until you move to an iCloud+ plan of 200 GB or more, which gives up to 2x to 20x the standard limit, starting with the 27.3 release. Why it matters: Heavy Siri AI users may be asked to upgrade iCloud+. Apple says this extra access is not available in the EU or UK. [Source](https://support.apple.com/en-us/127901)
 
 ## What can I try with AI today?
 
