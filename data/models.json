@@ -1,7 +1,15 @@
 {
-  "updated": "2026-11-18",
+  "updated": "2026-11-25",
   "howToUpdate": "Add a row when a lab publishes a release post. Only use the lab's own page as the source. If a date is not on that page, write 'Date not published'. If an access detail is not on that page, say what the page does and does not state. Do not guess.",
   "models": [
+    {
+      "company": "Google",
+      "model": "Gemini 4 Neon",
+      "released": "2026-11-18",
+      "goodFor": "Fast, lower-cost help with complex coding, analysis, documents and research; sits between Hydrogen (everyday) and Carbon (hardest work). Tasks in Gemini can now run on it",
+      "free": "No. Google AI Pro and Ultra subscribers in the Gemini app (model drop-down) and Antigravity; paid Gemini API at $3/$15 per million input/output tokens",
+      "source": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-neon/"
+    },
     {
       "company": "OpenAI",
       "model": "GPT-6.2 Astra",
@@ -16,9 +24,10 @@
       "model": "GPT-6.2 Sol",
       "released": "2026-11-17",
       "goodFor": "Everyday work, writing and multi-step tasks; OpenAI says smarter and more efficient than GPT-6.1 Sol",
-      "free": "No (Plus, Pro, Enterprise and Edu in ChatGPT Work and Codex; API is paid at $2/$10 per million input/output tokens)",
+      "free": "No (Plus, Pro, Enterprise and Edu in ChatGPT Work and Codex; since 23 Nov a chat-tuned version also powers the Chat tab for Plus, Pro, Business and Enterprise; API is paid at $2/$10 per million input/output tokens)",
       "source": "https://openai.com/index/introducing-gpt-6-2-astra-sol/",
-      "releasedSource": "https://openai.com/news/"
+      "releasedSource": "https://openai.com/news/",
+      "source2": "https://help.openai.com/en/articles/6825453-chatgpt-release-notes"
     },
     {
       "company": "Microsoft",
@@ -100,8 +109,9 @@
       "model": "GPT-6 Luna",
       "released": "2026-09-22",
       "goodFor": "Fast, low-cost everyday work",
-      "free": "Yes, in the ChatGPT desktop app for Free and Go users (per launch post)",
-      "source": "https://openai.com/index/introducing-gpt-6-sol-and-luna/"
+      "free": "Yes: the ChatGPT pricing page lists GPT-6 Luna on the Free and Go plans (launch post said Free and Go get it in the desktop app)",
+      "source": "https://openai.com/index/introducing-gpt-6-sol-and-luna/",
+      "source2": "https://chatgpt.com/pricing"
     },
     {
       "company": "OpenAI",
@@ -153,7 +163,7 @@
       "model": "Gemini 3.8 Flash",
       "released": "2026-09-02",
       "goodFor": "Low-cost reasoning and coding 'workhorse'",
-      "free": "No free consumer access listed. In the Gemini app, AI Mode in Google Search and Gemini in Google Sheets it is for Google AI Pro and Ultra subscribers. Developers can use it in the Gemini API (introductory price $0.75/$3.75 per million input/output tokens) via Google AI Studio, Android Studio and Antigravity",
+      "free": "No free consumer access listed. In the Gemini app, AI Mode in Google Search and Gemini in Google Sheets it is for Google AI Pro and Ultra subscribers. Developers can use it in the Gemini API (introductory price $0.75/$3.75 per million input/output tokens until 31 Dec 2026, then $1.50/$7.50) via Google AI Studio, Android Studio and Antigravity",
       "source": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/3-8-flash-and-3-8-flash-cyber/"
     },
     {
